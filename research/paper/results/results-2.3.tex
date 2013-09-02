@@ -1,0 +1,110 @@
+\section{Results}
+
+\subsection{Stationary data}
+
+The stationary $C_y$ data obtained using DNS simulations (Fig.\ref{cy ploynomial}(a))have a good agreement with data presented in \cite{Joly2012}. In comparison with the 7th order polynomial curve at \reynoldsnumber=22300 (Fig.\ref{cy ploynomial}(b))  several differences could be observed. The peak value of $C_y$ is  significantly lower at low  at \reynoldsnumber=165. The inflection point present at \reynoldsnumber=22300 could not be observed at \reynoldsnumber=165. This agrees with the findings of \cite{Luo2003}. It was concluded by \cite{Luo2003} that hysteresis occur due to the inflection point found in the $C_y$ curve. Therefore hysteresis is not expected at \reynoldsnumber=165. The range where $C_y$ remain positive is narrow at \reynoldsnumber=165 ($0^0-6^0$) compared to \reynoldsnumber=22300 ($0^0-15^0$). This is quite significant due to the fact that it will effect the direction of power transfer which will be explained in subsections later. Therefore due to the overall smaller $C_y$ and narrow range of angles where $C_y$ is positive for \reynoldsnumber=165 compared to \reynoldsnumber=22300 leads one to expect a lot less power at\reynoldsnumber=165 compared to \reynoldsnumber=2230.
+
+  
+
+\input{../figure/uncollapsed_data}
+
+\subsection{Displacement,velocity and power output as a function of reduced velocity}
+
+
+ The quasi-steady analysis data reveals that the displacement amplitude tend to grow with increasing $U^*$ Fig.\ref{fig:uncollapsed_data} (a) and (b). The onset of galloping is delayed with increasing $\zeta$ for both high and low Reynolds numbers. This echo the findings of previous studies by \cite{Parkinson1964} and \cite{Barrero-Gil2010a}. Hysteresis could be observed at higher Reynolds numbers.
+
+ 
+ \subsubsection*{Power vs $U^*$}
+ 
+ The mean power grows, peaks and then reduces as $U^*$ is increased (Fig.\ref{fig:uncollapsed_data} (e) and (f)) for each value of $\zeta$. A shift of the peak power could be observed as $\zeta$ increases. However, the magnitude of the peaks remain constant for all the values of $\zeta$. A similar observation could be made from the results of \cite{Barrero-Gil2010a}. It could be observed that unlike VIV the  system has no preferred frequency. Although the onset of galloping and the point where peak power occur at different $U^*$ when the damping ratio is changed, the peak power remains constant regardless of $U^*$.
+ 
+ \subsection{Galloping response and natural frequency}
+ 
+ If the oscillator equation Eq.\eqref{final_equation_motion} is considered from a power perspective (disregarding the shedding term as the net effect is negligible as system oscillates at natural frequency which is far from shedding frequency), it is obvious the forcing term on RHS of the equation is only dependent on transverse velocity($\dot{y}$) which is essentially the input power of the system. On the RHS, the mechanical damping or system damping is the only term that takes out power at any instant. This could be expressed as the product of damping force and the velocity ($P_d$). The inertia and the stiffness terms governs the frequency of the system but the forces associated by those terms are conservative forces i.e there is zero net energy in or out of the system when averaged over a period. Therefore that the system is governed by the transverse velocity rather than the natural frequency.
+ 
+
+ Using $U^*$ and $\zeta$ assumes that the system has a preferred frequency. The effect of fixing $\zeta$ and increasing $U^*$ actually decreases damping constant for a fixed free-stream velocity. ($U^*=\frac{U}{f \times D}$, $\zeta= \frac{c}{2 m \omega_n}$ ). Both these effects leads to the multiple lines that are horizontally transpose when $\zeta$ is increased (Fig.\ref{fig:uncollapsed_data} (e) and (f)). Therefore the effect of $\zeta$ essentially scales up the damping coefficient for a fixed $U^*$.
+ 
+ A single set of results for a given $C_y$ curve could be obtained for the displacement, velocity and power were plotted as a function of damping constant $c$ 
+(Fig \ref{fig:collpased_data} (a),(b),(c) and (d)). Fig.\ref{fig:time_hostory_velocity_same_power} clearly shows that a similar velocity amplitude could be obtained for a given damping factor provided that the small fluctuations are disregarded. 
+ 
+  
+
+\input{../figure/collapsed_data}
+ 
+\input{../figure/velocity_compare}
+
+
+ 
+ Power could be expressed as the product of force and velocity. Therefore the transferred power form fluid-to-body could be expressed as $P_t=F_y\dot{y}$. Similarly the dissipated power due to the mechanical damping could be expressed as $P_d=(c\dot{y})\dot{y}$. The time average of these two quantities should be equal due to energy conservation, provided that the mechanical friction is neglected . Analysing the  time histories of $P_t $ and $P_d$ at key regions (Fig.\ref{fig:regions_1}) on the mean power vs $U^*$ provides a detailed explanation for the variation of the output powe when the reduced velocity is increased. The key regions consists of region 1 where the $P_m$ increases with \ustar, region 2 where $P_m$ becomes maximum and region 3 where $P_m$ decreases with \ustar. It has been established earlier that the damping factor is a function of $U^*$. Therefore it could be derived that $U^*$ is inversely proportional to damping coefficient. Hence the damping coefficient reduces when you move from region 1 to 3.Fig \ref{fig:lift_curves} (a) shows that $C_y$ and therefore instantaneous force rises until $4^0$ where it peaks and then falls and at around $6^0$ becomes negative. Maximum amount of power could be transferred within the peak region. At the region where the instantaneous force becomes negative it will be opposing the velocity $\dot{y}$.  
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.5\textwidth]{../FnP/sketch_1}
+\caption{ Three key regions taken into account to analyse the time histories of power in a typical mean power vs. $U^*$ curve at $Re=165$. In region 1, high damping suppresses oscillation, hence the power output is low. In region 2, the damping is close to the optimum for power transfer. In region 3, the low damping means little energy is extracted from the fluid.}
+\label{fig:regions_1}
+\end{figure}
+
+
+ At region 1 where $U^*=90$ (region 1) the damping constant is high and therefore a clear sinusoidal signal could be observed for both $P_d$ and $P_t$ Fig. \ref{fig:power_time_histories} (a). Fig.\ref{fig:power_time_histories} (d) and (g) shows that $\theta$ is in line or in phase with $F_y$. Hence both $P_d$ and $P_t$ becomes sinusoidal. However, due to the higher damping  $\theta$ does not go to the region which produces the peak power. 
+
+At region 2 ($U^*=165$) the mean power output is at its maximum. $P_t$ is not a pure sinusoidal signal. However, the  signal remains periodic. From the time history graph of $P_t$, two `peaks' are present in a single half cycle (Fig \ref{fig:power_time_histories} (b)). In this case at certain point in time $\theta$ arrives at the region where $F_y$ decreases but does not become negative when the angle is increased. Therefore, the force $F_y$ and $P_t$ reduces as the velocity further increased. This is because $\theta = tan^{-1}(\frac{\dot{y}}{U})$ and $\theta$ is proportional to  transverse velocity. As the velocity $\dot{y}$ is sinusoidal, $\theta$ recovers back and this leads to two `peaks'  in a single half cycle.
+
+ At region 3 ($U^*= 400$) `$c$' is low in comparison with region 1 and 2 which leads to a low mean power output. Fig.\ref{fig:power_time_histories} (c) shows that $P_t$ becomes negative over some portion of the cycle. This is because $\theta$  passes the point where both $\theta$ and $C_y$ (therefore $F_y$) are positive. As the force opposes the direction of travel, the power becomes negative. On the other hand from an energy perspective we could see that the mechanical damping is not sufficient to dissipate out the energy transferred from the fluid to the structure (as `$c$' is substantially low), therefore  part of this energy is transferred back to the fluid which is depicted as a negative power region in Fig.\ref{fig:power_time_histories} (c).
+
+ 
+  
+\input{../figure/time_histories}
+ 
+
+
+
+\subsection{Effect of $m^*$}
+
+ \input{../figure/m_star_collapsed}
+
+The maximum mean power at different $m^*$ (Fig.\ref{fig:m_star_collapsed}) was constant beyond $m^*=30$. However, at $m^* \leq 30$ an effect of $m^*$ it could be observed. The peak value of the mean power curve reduces with $m^*$. This may be due to the fact that as the inertia of the system is reduced and galloping becomes weak. Therefore shedding become dominant. This was also reported by \cite{Joly2012} where galloping amplitude was reduced at low $m^*$. 
+
+ \input{../figure/qss_fsi}
+
+\subsection{Comparison with FSI simulations}
+ Similar trends were captured for both displacement and velocity amplitudes between QSS and FSI simulations (Fig. \ref{fig:FSI_QSS_compare}(a) and \ref{fig:FSI_QSS_compare}(b)). Quantitatively a large discrepancy (average of $30\%$) could be observed between QSS and FSI data. Therefore the power also becomes significantly low in FSI data (Fig.\ref{fig:FSI_QSS_compare}(c)). However, the FSI data (Fig.\ref{fig:FSI_QSS_compare} (c)) were able to produce the main the rise and the fall of mean power when $U^*$ was increased. The reasoning behind this fact is that galloping is weak at Re 165  and therefore fluid damping has a significant effect. It was reported by \cite{Barrero-Gil2009} that galloping only starts to occur ar Re $\geq 159$. As power is function of $(\dot{y})^2$ the error between QSS and FSI power becomes significantly large.  
+ 
+ Put conclusion here 
+ 
+ 
+
+%\section{Conclusion}
+
+
+
+
+
+
+
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+
+
+ % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
