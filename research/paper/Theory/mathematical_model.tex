@@ -17,7 +17,7 @@
 F_y=\frac{1}{2}\rho U^2\mathcal{A}C_y
 \end{equation}
 
- In the QSS  model $C_y$ is determined by an interpolating polynomial based on the stationary lift and drag data. The order of the interpolation polynomial has varied from study to study. For  example a $7^{th}$ polynomial order was used in \cite{Parkinson1964} and $3^{rd}$ order polynomial was used in \cite{Barrero-Gil2009}. \cite{Ng2005} concluded that using a $7^{th}$ order polynomial is sufficient and a polynomial higher than that of $7^{th}$ order polynomial neither provides a significantly better result nor does it exhibit an additional amplitudes of oscillation. Thus a $7 ^{th}$ order interpolating polynomial was incorporated in this present study. 
+ In the QSS  model $C_y$ is determined by an interpolating polynomial based on the lift and drag data  for flow over a stationary body at various angles of attack. The order of the interpolation polynomial has varied from study to study. For  example a $7^{th}$ polynomial order was used in \cite{Parkinson1964} and $3^{rd}$ order polynomial was used in \cite{Barrero-Gil2009}. \cite{Ng2005} concluded that using a $7^{th}$ order polynomial is sufficient and a polynomial higher than that of $7^{th}$ order polynomial neither provides a significantly better result nor does it exhibit an additional amplitudes of oscillation. Thus a $7 ^{th}$ order interpolating polynomial was incorporated in this present study. 
 
 \begin{equation}
 \label{cy ploynomial}
@@ -29,7 +29,7 @@ C_y(\theta)=a_1\left(\frac{\dot{y}}{U}\right)+a_3\left(\frac{\dot{y}}{U}\right)^
 %\ddot{y}+c^*\dot{y}+k^*y=\frac{1}{2}\rho U^2A
 %\end{equation}
 
-\cite{Joly2012} reported a reduction of displacement amplitude at low mass ratios. Therefore in order to account for it {\Tan what is "it" ??} a sinusoidal forcing function to the RHS of the oscillator model (Eq. \eqref{equationofmotion})was introduced, in order to represent forcing due to VIV. This method provided satisfactory results with the numerical simulations obtained at low mass ratios. In this study, the forcing due to VIV is incorporated using a sinusoidal forcing function $F_0\sin{\omega_{s}t}$ added to the RHS of the equation. $\omega_{s}$ and $F_0$ represents shedding frequency and the maximum force due to shedding respectively. Thus, the final equation is given by Eq. \eqref{final_equation_motion}.    
+\cite{Joly2012} introduced  an addition of a sinusoidal forcing function to the hydrodynamic forcing. This enables to model to provide accurate predictions even at low mass ratios where galloping \hilight{....} suppressed or not present. In this study, the forcing due to VIV is incorporated using a sinusoidal forcing function $F_0\sin{\omega_{s}t}$ added to the RHS of the equation. $\omega_{s}$ and $F_0$ represents shedding frequency and the maximum force due to shedding respectively. Thus, the final equation is given by Eq. \eqref{final_equation_motion}.    
 
 \begin{equation}
 \label{final_equation_motion}
@@ -40,7 +40,7 @@ This equation could be solved by time integration methods. In  this study  `Ode 
 
 \subsection{Calculation of average power}
 
- The dissipated power due to the mechanical damping could be expressed as the harvested power output assuming that the other  power dissipation due to internal damping such as friction of the system is negligible. Therefore the mean power output could be given by Eq. \eqref{power}. 
+ The dissipated power due to the mechanical damping represents the ideal potential amount of harvested power output. Therefore the mean power output could be given by Eq. \eqref{power}. 
   
  
  \begin{equation}
@@ -54,7 +54,7 @@ P_{mean}=\frac{1}{T}\int_{0}^{T}(c\dot{y})\dot{y} dt
  
 \subsection{Parameters used} 
  
-The stationary data and the fluid-structure interaction (FSI) data were obtained using a higher order spectral element code which simulate 2D laminar flow. The Reynolds number was kept at 165 as it was pointed out by \cite{Sheard2009} and \cite{Tong2008} that the 3 dimensional transition for a square cylinder occurs at approximately Re=160. $F_0$ was kept at $0.4937$ which was obtained by using a simple linear interpolation on the data presented in \cite{Joly2012}. $\omega_s$ was set to $0.98$ winch was obtained by performing a power spectral analysis of the stationary data at $0^0$. Stationary $C_y$ data were obtained at different angles of attack ranging from $0^0$ to $16^0$. The average power was obtained by using Eq. \eqref{power} with data sets consisting substantial amount of peaks. Power data  at Re=22300 were obtained using input $C_y$ data in \cite{Parkinson1964} in order to provide a comparison between high and low Reynolds numbers. $m^*$ was kept at 1163 for \reynoldsnumber=22300 (Similar as \cite{Parkinson1964}) and $m^*=20$ for \reynoldsnumber=165. These parameters  were used throughout this study unless otherwise specified. 
+The stationary data and the fluid-structure interaction (FSI) data were obtained using a higher order spectral element code to simulate the two-dimensional laminar flow. The Reynolds number was kept at 165 as it was pointed out by \cite{Sheard2009} and \cite{Tong2008} that the 3 dimensional transition for a square cylinder occurs at approximately Re=160. $F_0$ was kept at $0.4937$ which was obtained by using a simple linear interpolation on the data presented in \cite{Joly2012}. Shedding frequency $\omega_s$ was set to $0.98$ winch was obtained by performing a power spectral analysis of the stationary data at $0^0$. Stationary $C_y$ data were obtained at different angles of attack ranging from $0^0$ to $16^0$. The average power was obtained by using Eq. \eqref{power} with data sets consisting substantial amount of peaks. Power data  at Re=22300 were obtained using input $C_y$ data in \cite{Parkinson1964} in order to provide a comparison between high and low Reynolds numbers. $m^*$ was kept at 1163 for \reynoldsnumber=22300 (Similar as \cite{Parkinson1964}) and $m^*=20$ for \reynoldsnumber=165. These parameters  were used throughout this study unless otherwise specified. 
 
 
  FSI data were obtained for the oscillating (free-vibration) scenario. The Naiver-Stokes equations were solved using an accelerated frame of reference using the previously mentioned code. A three-step time splitting scheme together with high-order Lagrangian polynomials were used to obtain the solution. The details of the method could be found in \cite{Thompson2006,Thompson1996a}. This code was incorporated in \cite{Leontini2011,Leontini2007a}  where it was employed in a fluid-structure interaction problems. 
