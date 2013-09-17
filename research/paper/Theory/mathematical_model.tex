@@ -3,7 +3,7 @@
 
 \subsection{Mathematical model (Quasi-steady )}
 
- One of the widely used mathematical model to predict the system response under galloping is the Quasi-steady state (QSS) model, incorporated by \cite{Parkinson1964} for a square cross section. The equation of motion of the body under galloping is given by Eq. \eqref{equationofmotion}. The forcing term $F_y$ is given by Eq.\eqref{lift equation}.
+ One of the widely used mathematical model to predict the system response under galloping is the Quasi-steady state (QSS) model, incorporated by \cite{Parkinson1964} for a square cross section. The equation of motion of the body under galloping is given by Eq.\eqref{equationofmotion}. The forcing term $F_y$ is given by Eq.\eqref{lift equation}.
  
  \input{../figure/sketch-1}
 
@@ -29,7 +29,7 @@ C_y(\theta)=a_1\left(\frac{\dot{y}}{U}\right)+a_3\left(\frac{\dot{y}}{U}\right)^
 %\ddot{y}+c^*\dot{y}+k^*y=\frac{1}{2}\rho U^2A
 %\end{equation}
 
-\cite{Joly2012} introduced  an addition of a sinusoidal forcing function to the hydrodynamic forcing. This enables to model to provide accurate predictions even at low mass ratios where galloping excitation is suppressed or not present. In this study, the forcing due to VIV is incorporated using a sinusoidal forcing function $F_0\sin{\omega_{s}t}$ added to the RHS of the equation. $\omega_{s}$ and $F_0$ represents shedding frequency and the maximum force due to shedding respectively. Thus, the final equation is given by Eq. \eqref{final_equation_motion}.    
+\cite{Joly2012} introduced  an addition of a sinusoidal forcing function to the hydrodynamic forcing. This enables to model to provide accurate predictions even at low mass ratios where galloping excitation is suppressed or not present. In this study, the forcing due to VIV is incorporated using a sinusoidal forcing function $F_0\sin{\omega_{s}t}$ added to the RHS of the equation. $\omega_{s}$ and $F_0$ represents shedding frequency and the maximum force due to shedding respectively. Thus, the final equation is given by Eq.\eqref{final_equation_motion}.    
 
 \begin{equation}
 \label{final_equation_motion}
@@ -40,7 +40,7 @@ This equation could be solved by time integration methods. In  this study  `Ode 
 
 \subsection{Calculation of average power}
 
- The dissipated power due to the mechanical damping represents the ideal potential amount of harvested power output. Therefore the mean power output could be given by Eq. \eqref{power}. 
+ The dissipated power due to the mechanical damping represents the ideal potential amount of harvested power output. Therefore the mean power output could be given by Eq.\eqref{power}. 
   
  
  \begin{equation}
@@ -49,7 +49,7 @@ P_{mean}=\frac{1}{T}\int_{0}^{T}(c\dot{y})\dot{y} dt
  \end{equation}
  
  \input{../figure/cy_vs_theta}
- \vspace{20mm}
+
  \input{../figure/coefficient-table}
  
 \subsection{Parameters used} 
@@ -58,16 +58,16 @@ The stationary data and the fluid-structure interaction (FSI) data were obtained
 
 
 
-Shedding frequency $\omega_s$, was set to $0.98$ winch was obtained by performing a power spectral analysis of the stationary data at $0^0$. Stationary $C_y$ data were obtained at different angles of attack ranging from $0^0$ to $16^0$. The average power was obtained by using Eq. \eqref{power} 
+Shedding frequency $\omega_s$, was set to $0.98$ which was obtained by performing a power spectral analysis of the stationary data at $0^0$. Stationary $C_y$ data were obtained at different angles of attack ranging from $0^0$ to $16^0$. The average power was obtained by using Eq.\eqref{power} 
 
 
 
-and the averaging was done over no less than 20 galloping periods. Predictions of power output at Re=22300 were obtained using coefficients for curve fitting $C_y$ (\ref{table:cy-coefficients}) from \cite{Parkinson1964} in order to provide a comparison between high and low Reynolds numbers. $m^*$ was kept at 1163 for \reynoldsnumber=22300 (Similar as \cite{Parkinson1964}) and $m^*=20$ for \reynoldsnumber=165. These parameters  were used throughout this study unless otherwise specified. 
+and the averaging was done over no less than 20 galloping periods. Predictions of power output at Re=22300 were obtained using coefficients for curve fitting $C_y$ (Table (\ref{table:cy-coefficients})) from \cite{Parkinson1964} in order to provide a comparison between high and low Reynolds numbers. $m^*$ was kept at 1163 for \reynoldsnumber=22300 (Similar as \cite{Parkinson1964}) and $m^*=20$ for \reynoldsnumber=165. These parameters  were used throughout this study unless otherwise specified. 
 
 
  FSI data were obtained for the oscillating (free-vibration) scenario. The Naiver-Stokes equations were solved using an accelerated frame of reference using the previously mentioned code. A three-step time splitting scheme together with high-order Lagrangian polynomials were used to obtain the solution. The details of the method could be found in \cite{Thompson2006,Thompson1996a}. This code was incorporated in \cite{Leontini2011,Leontini2007a}  where it was employed in a fluid-structure interaction problems. 
  
- The computational domain consists of 690 quadrilateral macro elements where majority of the elements were concentrated near the square section. A freestream condition was given to the inlet, top and bottom boundaries and the normal velocity gradient was set to zero at the outlet. A convergence study was performed by changing the order of the polynomial ($p$-refinement) at $U^*=40$ and Re $165$. A 9th order polynomial together with a time step of $\frac{\Delta tU}{D}=0.001$ was sufficient to ensure an accuracy of $2\%$ with regards to amplitude of oscillation.  
+ The computational domain consists of 690 quadrilateral macro elements where majority of the elements were concentrated near the square section. A freestream condition was given to the inlet, top and bottom boundaries and the normal velocity gradient was set to zero at the outlet. A convergence study was performed by changing the order of the polynomial ($p$-refinement) at $U^*=40$ and \reynoldsnumber=$165$. A $9^{th}$ order polynomial together with a time step of $\frac{\Delta tU}{D}=0.001$ was sufficient to ensure an accuracy of $2\%$ with regards to amplitude of oscillation.  
  
 
  
