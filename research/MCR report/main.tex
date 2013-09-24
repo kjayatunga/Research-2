@@ -17,6 +17,7 @@
 \usepackage{epstopdf}
 \usepackage{enumerate}
 \usepackage{pdfpages}
+\newcommand{\hilight}[1]{\colorbox{yellow}{#1}}
 
 %\title{\Huge bfseries{Towards a green optical Internet 
 %jnvsjkvnsfjkvnfkjsv 
@@ -46,52 +47,69 @@
 \tableofcontents
 
 \section{Introduction}
-The search for alternative energy sources which could be categorised under the ”green”label has become important area of research in the modern word. Solar, wind power andwave power are some of the examples of these sources. Recently,a new branch of research has been developing to extract energy from flow induced vibrations. It has been hypothesized that this technique may work efficiently in areas where regular turbines cannot.
+The search for alternative energy sources which could be categorised under the ”green”label has become important area of research in the modern word. Solar, wind power and wave power are some of the examples of these sources. Recently,a new branch of research has been developing to extract energy from flow induced vibrations. It has been hypothesized that this technique may work efficiently in areas where regular turbines cannot.
 A simple structure that is susceptible to flow-induced vibrations that are suitable for energy extraction are slender structures,such as cylinders, elastically mounted perpendicular to a fluid stream. With regards to a slender body two common types of   flow induced vibrations are Vortex Induced Vibrations (VIV) and aeroelastic galloping. Significant research has been carried out by Bernitsas and his team on extracting useful energy from VIV. Some of their significant work includes investigating the influence  of physical parameters such as mass ratio (the ratio of the mass of the cylinder and the displaced fluid), Reynolds number, mechanical properties(\cite{Raghavan2010a} ,\cite{Lee2011b}) and location (effect of the bottom boundary) (\cite{Raghavan2009}). However,the possibility of extracting energy using aeroelastic galloping has not been thoroughly investigated. Some theoretical work was carried out by (\cite{Barrero-Gil2010a}). Utilizing galloping may be a more viable method to harness energy from flow induced vibrations as it is not bounded by a "lock-in" range of reduced velocities(ratio between the freestream velocity and the product of the natural frequency of the system and the characteristic length).Therefore it is preferable to investigate further the possibility of harnessing energy from flow induced vibrations using aeroelastic galloping. 
 
 \section{Research focus}
- This research contributes to the existing knowledge on energy extraction from flow induced vibrations. This research focuses investigating methods to optimise the energy transfer from fluid-to-body when galloping by using theoretical methods (i.e Quasi-steady state theory and DNS simulations). Therefore the project was separated into two main phases.
+ This research contributes to the existing knowledge on energy extraction from flow induced vibrations. The main focus is investigating methods to optimise the energy transfer from fluid-to-body when galloping by using theoretical methods (i.e Quasi-steady state theory and DNS simulations). Therefore the project was separated into two main phases.
  
 \begin{enumerate}[]
 \item Phase 1: To optimise the mechanical portion of the system 
 \item Phase 2: To optimise the fluid dynamics portion of the system 
 \end{enumerate}
 
-
-
-
-
-
-
-
-
-
 \section{Research objectives}
-
-
-
-
-
-
-
+\
 
 
 
 \section{Research progress}
 
-From the literature survey, we identified both optical-circuit switching (OCS) and optical-burst switching (OBS) to be more energy efficient in comparison to point-to-point (pt-pt) and optical-packet switching (OPS) technologies. However, both OCS and OBS face a number of challenges. Therefore, in stage two of this study, we attempted to generate novel mechanisms to increase energy efficiency in OCS and OBS based optical fiber backbone networks. 
+\subsection{Phase-1}
+
+At this point in time  Phase 1 has been completed which is investigating the behaviour of the mechanical portion of the system. The following conclusions were made. Further information could be found in \hilight{Appendix}
 \begin{itemize}
-\item 
+\item   the system is not frequency dependent, but more dependent on the velocity amplitude.
 \end{itemize}
 
+\begin{itemize}
+\item The main tuning parameter on the mechanical system to obtain an optimum power output is the damping factor.
+\end{itemize}
 
 \begin{itemize}
-\item 
-
+\item It was observed that a reduction in power at low mass ratios ($m^*\leq30$).The reduction in power at low mass ratios was due to the fact that the instantaneous power transferred from fluid-to-body and power dissipated out from mechanical damping are not the same. Therefore the mechanical system requires adequate inertia to store a portion of power transferred from the fluid to the body to sustain galloping.
 \end{itemize}
-Finally, in stage four of this study, we intend to explore and develop novel frameworks to increase energy efficiency in an optical fiber backbone network, by utilizing either sleep mode of operation, ALR or MLR techniques. As the reader might have noticed, both sleep mode of operation and MLR were used in the two previous two stages in conjunction with OBS and WBS technologies. We are currently analysing the existing literature, and are in the process of developing an energy-aware network configuration where line cards and links in the network could move back and forth between sleep and active states depending on the network load. 
 
-With respect to the PhD thesis, each of the above stages (literature survey and the three approaches) are intended to be converted into a chapter. This is to be followed by a chapter covering the discussion and the conclusion (Appendix). During my PhD, the three main approaches are being studied concurrently. Therefore, as of today, certain tasks from each different stage have been completed. The remaining tasks are to be completed before the end of the allocated time period as explained in the Gantt chart shown in Figure 1. In conclusion, 60\% of the research work has been completed to date with 70\% of the objectives being successfully accomplished.
+\subsection{Phase-2}
+
+As previously mentioned the fluid dynamics portion of the system is studied in phase-2.
+
+\subsection{Creation of the negative lift}
+
+In order to carry out an optimisation study on the fluid dynamics portion of the system, it is essential to study underlying fluid mechanics for galloping. It has been already established by \cite{Parkinson1964} that the instantaneous lift is the input of the system. Therefore it is essential to know how exactly this lift occur. According to \cite{Parkinson1989},\hilight{Luo 94} the lift force is crated by the secondary flow of the two shear layers of either side of the body which creates an unbalanced pressure distribution on the afterbody. If a square cross section is taken as an example as the cross section have a transverse $\dot{y}$, the relative velocity causes an instantaneous angle of attack which makes one shear layer lies closer to the body than the other. Therefore the shear layer near the body creates a pressure imbalance by creating a higher suction on the wall of the body on the adjacent side than the suction caused by the shear layer on the opposite side on its adjacent side of the body. The lift force become its maximum when the shear layer closer to the boy re attaches at the trailing edge. As the angle of attack is increased beyond that point, The separated shear layer in the opposite side of the body (which was initially not close to the body) shrinks therefore the pressure difference decreases which results a decrease in the lift force. This explanation was validated by \cite{Luo1994} by experimental flow visualisation.
+
+Therefore two parameters could be identified which governs the lift 
+
+\begin{itemize}
+\item{ The characteristics of the afterbody}
+\item{Shear layer separation}
+\end{itemize}
+ 
+\cite{Luo1994} have done some interesting studies on the lift characteristics on trapezoidal bodies. Which essentially the top and bottom sides of a square were tapered away systematically until it becomes triangle which is depicted in \hilight{Figure}.
+
+\input{./figures/luo_sketch}
+   
+
+
+
+ 
+
+
+
+
+
+
+ 
 
 %\begin{figure}[h]
 %\centering
@@ -172,7 +190,5 @@ Each sub-section mentioned above could be further divided into sections, if nece
 \newpage
 \centering
 \vspace*{2.5in}
-\section*{\LARGE Appendix 2}
-\addcontentsline{toc}{section}{Appendix 2} 
-\includepdf[page={-}]{ICTpaper.pdf}
+
 \end{document}
