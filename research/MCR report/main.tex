@@ -54,12 +54,12 @@ A simple structure that is susceptible to flow-induced vibrations that are suita
  This research contributes to the existing knowledge on energy extraction from flow induced vibrations. The main focus is investigating methods to optimise the energy transfer from fluid-to-body when galloping by using theoretical methods (i.e Quasi-steady state theory and DNS simulations). Therefore the project was separated into two main phases.
  
 \begin{enumerate}[]
-\item Phase 1: To optimise the mechanical portion of the system 
-\item Phase 2: To optimise the fluid dynamics portion of the system 
+\item Phase 1: Optimise the mechanical characteristics of the system.
+\item Phase 2: Optimise the fluid dynamics portion of the system 
 \end{enumerate}
 
 \section{Research objectives}
-\
+
 
 
 
@@ -67,26 +67,20 @@ A simple structure that is susceptible to flow-induced vibrations that are suita
 
 \subsection{Phase-1}
 
-At this point in time  Phase 1 has been completed which is investigating the behaviour of the mechanical portion of the system. The following conclusions were made. Further information could be found in \hilight{Appendix}
+Phase 1 has been completed which is investigating the behaviour of the mechanical characteristics of the system. The following conclusions were made. Further information could be found in \hilight{Appendix}
+
 \begin{itemize}
 \item   the system is not frequency dependent, but more dependent on the velocity amplitude.
-\end{itemize}
-
-\begin{itemize}
 \item The main tuning parameter on the mechanical system to obtain an optimum power output is the damping factor.
-\end{itemize}
-
-\begin{itemize}
-\item It was observed that a reduction in power at low mass ratios ($m^*\leq30$).The reduction in power at low mass ratios was due to the fact that the instantaneous power transferred from fluid-to-body and power dissipated out from mechanical damping are not the same. Therefore the mechanical system requires adequate inertia to store a portion of power transferred from the fluid to the body to sustain galloping.
 \end{itemize}
 
 \subsection{Phase-2}
 
 As previously mentioned the fluid dynamics portion of the system is studied in phase-2.
 
-\subsection{Creation of the negative lift}
+\subsubsection{Creation of the negative lift}
 
-In order to carry out an optimisation study on the fluid dynamics portion of the system, it is essential to study underlying fluid mechanics for galloping. It has been already established by \cite{Parkinson1964} that the instantaneous lift is the input of the system. Therefore it is essential to know how exactly this lift occur. According to \cite{Parkinson1989},\hilight{Luo 94} the lift force is crated by the secondary flow of the two shear layers of either side of the body which creates an unbalanced pressure distribution on the afterbody. If a square cross section is taken as an example as the cross section have a transverse $\dot{y}$, the relative velocity causes an instantaneous angle of attack which makes one shear layer lies closer to the body than the other. Therefore the shear layer near the body creates a pressure imbalance by creating a higher suction on the wall of the body on the adjacent side than the suction caused by the shear layer on the opposite side on its adjacent side of the body. The lift force become its maximum when the shear layer closer to the body re attaches at the trailing edge. As the angle of attack is increased beyond that point, The separated shear layer in the opposite side of the body (which was initially not close to the body) shrinks therefore the pressure difference decreases which results a decrease in the lift force. This explanation was validated by \cite{Luo1994} by experimental flow visualisation.
+In order to carry out an optimisation study on the fluid dynamics portion of the system, it is essential to study underlying fluid mechanics for galloping. It has been already established by \cite{Parkinson1964} that the instantaneous lift is the input of the system. Therefore it is essential to have an understanding on how exactly this lift occur. According to \cite{Parkinson1989},\hilight{Luo 94} the lift force is crated by the secondary flow of the two shear layers of either side of the body which creates an unbalanced pressure distribution on the afterbody. If a square cross section is taken as an example, when the body have a transverse $\dot{y}$, the relative velocity causes an instantaneous angle of attack which makes one shear layer lies closer to the body than the other. Therefore the shear layer near the body creates a pressure imbalance by creating a higher suction on the wall of the body on the adjacent side than the suction caused by the shear layer on the opposite side on its adjacent side of the body. The lift force become its maximum when the shear layer closer to the body re attaches at the trailing edge. As the angle of attack is further increased, the separated shear layer in the opposite side of the body (which was initially away from the body) shrinks therefore the pressure difference decreases which results a decrease in the lift force. This explanation was validated by \cite{Luo1994} by conducting flow visualisation experimentally.
 
 Therefore two parameters could be identified which governs the lift 
 
@@ -96,8 +90,10 @@ Therefore two parameters could be identified which governs the lift
 \end{itemize}
  
 \cite{Luo1994} have done some interesting studies on the lift characteristics on trapezoidal bodies. Which essentially the top and bottom sides of a square were tapered away systematically until it becomes triangle which is depicted in \hilight{Figure}.
+\input{./figures/luo_sketch}. According to the data presented \cite{Luo1994} the highest lift is produced by the triangle. However, the maximum lift occur at a very large angle of attack ($\theta\approx 34^0 $) compared to a square cross section ($\theta\approx 12^0 $).
 
-\input{./figures/luo_sketch}
+According to the literature survey carried out so far, investigations have been carried out only for 
+
    
 
 
@@ -119,76 +115,76 @@ Therefore two parameters could be identified which governs the lift
 %\end{figure}
 
 
-\section{Difficulties and challenges} 
-%
+%\section{Difficulties and challenges} 
+%%
+%%\begin{enumerate}
+%%      
+%%\end{enumerate}
+%\bibliographystyle{elsarticle-harv}
+%\bibliography{../bibtex/MCR}
+%\appendix
+%%\begin{center}
+%%\section*{\LARGE Appendix 1}
+%%\addcontentsline{toc}{section}{Appendix 1} 
+%%\end{center}
+%Proposed table of contents of the final PhD thesis:
 %\begin{enumerate}
-%      
+%\item Introduction
+%\begin{enumerate}[i]
+%\item Looking forward
+%\item Scope of the thesis
+%\item Organization of the thesis
+%\item Objectives
+%\item Contributions
+%\item Publications 
 %\end{enumerate}
-\bibliographystyle{elsarticle-harv}
-\bibliography{../bibtex/MCR}
-\appendix
-%\begin{center}
-%\section*{\LARGE Appendix 1}
-%\addcontentsline{toc}{section}{Appendix 1} 
-%\end{center}
-Proposed table of contents of the final PhD thesis:
-\begin{enumerate}
-\item Introduction
-\begin{enumerate}[i]
-\item Looking forward
-\item Scope of the thesis
-\item Organization of the thesis
-\item Objectives
-\item Contributions
-\item Publications 
-\end{enumerate}
-\item Power consumption in optical core network
-\begin{enumerate}[i]
-\item Introduction
-\item Core network architecture
-\item Core node architecture 
-\item Power consumption values
-\item Node-based approaches
-\item Traffic engineering-based approaches
-\item Network engineering-based approaches
-\end{enumerate}
-\item Node-based energy efficiency
-\begin{enumerate}[i]
-\item Introduction
-\item General network model
-\item Problem definition
-\item Cost model
-\item Energy and cost efficient algorithm
-\item Framework for energy efficient OBS network
-\item Summary
-\end{enumerate}
-\item Traffic engineering-based energy efficiency
-\begin{enumerate}[i]
-\item Introduction
-\item Grooming based network model
-\item Problem definition
-\item Sparse grooming 
-\item Waveband grooming 
-\item Summary
-\end{enumerate}
-\item Network engineering-based energy efficiency \begin{enumerate}[i]
-\item Introduction
-\item MLR based network model
-\item Problem definition
-\item MLR based WBS network
-\item Sleep mode enabled core network
-\item Summary
-\end{enumerate}
-\item Conclusion
-\begin{enumerate}[i]
-\item Introduction
-\item Summary of the work
-\item Future directions
-\end{enumerate}
-\end{enumerate}
-Each sub-section mentioned above could be further divided into sections, if necessary. For example, 3(v) could be divided as 3(v)(a) "ILP formulation", 3(v)(b) "Heuristic algorithm" and 3(v)(c) "Evaluation"
-\newpage
-\centering
-\vspace*{2.5in}
+%\item Power consumption in optical core network
+%\begin{enumerate}[i]
+%\item Introduction
+%\item Core network architecture
+%\item Core node architecture 
+%\item Power consumption values
+%\item Node-based approaches
+%\item Traffic engineering-based approaches
+%\item Network engineering-based approaches
+%\end{enumerate}
+%\item Node-based energy efficiency
+%\begin{enumerate}[i]
+%\item Introduction
+%\item General network model
+%\item Problem definition
+%\item Cost model
+%\item Energy and cost efficient algorithm
+%\item Framework for energy efficient OBS network
+%\item Summary
+%\end{enumerate}
+%\item Traffic engineering-based energy efficiency
+%\begin{enumerate}[i]
+%\item Introduction
+%\item Grooming based network model
+%\item Problem definition
+%\item Sparse grooming 
+%\item Waveband grooming 
+%\item Summary
+%\end{enumerate}
+%\item Network engineering-based energy efficiency \begin{enumerate}[i]
+%\item Introduction
+%\item MLR based network model
+%\item Problem definition
+%\item MLR based WBS network
+%\item Sleep mode enabled core network
+%\item Summary
+%\end{enumerate}
+%\item Conclusion
+%\begin{enumerate}[i]
+%\item Introduction
+%\item Summary of the work
+%\item Future directions
+%\end{enumerate}
+%\end{enumerate}
+%Each sub-section mentioned above could be further divided into sections, if necessary. For example, 3(v) could be divided as 3(v)(a) "ILP formulation", 3(v)(b) "Heuristic algorithm" and 3(v)(c) "Evaluation"
+%\newpage
+%\centering
+%\vspace*{2.5in}
 
 \end{document}
