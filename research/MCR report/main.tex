@@ -88,16 +88,29 @@ Therefore two parameters could be identified which governs the lift
 \item{ The characteristics of the afterbody}
 \item{Shear layer separation}
 \end{itemize}
- 
-\cite{Luo1994} have done some interesting studies on the lift characteristics on trapezoidal bodies. Which essentially the top and bottom sides of a square were tapered away systematically until it becomes triangle which is depicted in \hilight{Figure}.
-\input{./figures/luo_sketch}. According to the data presented \cite{Luo1994} the highest lift is produced by the triangle. However, the maximum lift occur at a very large angle of attack ($\theta\approx 34^0 $) compared to a square cross section ($\theta\approx 12^0 $).
+ %\input{./figures/luo_sketch}.
+\cite{Luo1994} have done some interesting studies on the lift characteristics on trapezoidal bodies. Which essentially the top and bottom sides of a square were tapered away systematically until it becomes triangle which is depicted in \hilight{Figure}. According to the data presented \cite{Luo1994} the highest lift is produced by the triangle. However, the maximum lift occur at a very large angle of attack ($\theta\approx 34^0 $) compared to a square cross section ($\theta\approx 12^0 $).
 
-According to the literature survey carried out so far, investigations have been carried out only for 
+\subsubsection{Optimising the cross sectional shape}
+According to the literature survey done so far, investigations have been carried out only on cross sections with basic shapes. 
 
+\begin{itemize}
+\item{Square}
+\item{Triangle}
+\item{Trapezium}
+\end{itemize}
    
+Our hypothesis is that the cross section could be further optimised to get a higher power output by incorporating a complex shape which is a combination of the basic shapes. The current suggestion is that to analyse the characteristics of a hybrid shape of square and triangle. The idea is to delay the shear layer reattachment. which may result in having a larger band of induced angles where the forcing is substantially high. This will eventually then lead to a higher mean power output.
+
+\begin{itemize}
+\item{The stationary $c_y$ data of basic cross sections (i.e square, triangle and trapezium) will be obtained using DNS simulations at laminar flow. The data will be compared with existing literature. The time averaged pressure fields will be obtained in order to analyse the behaviour of the shear layers.}
+\item{The stationary data of the complex shape shown in \hilight{Figure} will be obtained together with the time average pressure fields where the behaviour of the shear layers could be analysed.}
+\item{Based on the initial results an optimisation study will be carried out by changing $l$ and $h$. The quasi-steady model will be used to obtain the power output.}
+\item{FSI simulations will be carried out and the power output will be compared with the data obtained using quasi-steady model.}
+\end{itemize}  
 
 
-
+ 
  
 
 
@@ -127,61 +140,54 @@ According to the literature survey carried out so far, investigations have been 
 %%\section*{\LARGE Appendix 1}
 %%\addcontentsline{toc}{section}{Appendix 1} 
 %%\end{center}
-%Proposed table of contents of the final PhD thesis:
-%\begin{enumerate}
-%\item Introduction
-%\begin{enumerate}[i]
-%\item Looking forward
-%\item Scope of the thesis
-%\item Organization of the thesis
-%\item Objectives
-%\item Contributions
-%\item Publications 
-%\end{enumerate}
-%\item Power consumption in optical core network
-%\begin{enumerate}[i]
-%\item Introduction
-%\item Core network architecture
-%\item Core node architecture 
-%\item Power consumption values
-%\item Node-based approaches
-%\item Traffic engineering-based approaches
-%\item Network engineering-based approaches
-%\end{enumerate}
-%\item Node-based energy efficiency
-%\begin{enumerate}[i]
-%\item Introduction
-%\item General network model
-%\item Problem definition
-%\item Cost model
-%\item Energy and cost efficient algorithm
-%\item Framework for energy efficient OBS network
-%\item Summary
-%\end{enumerate}
-%\item Traffic engineering-based energy efficiency
-%\begin{enumerate}[i]
-%\item Introduction
-%\item Grooming based network model
-%\item Problem definition
-%\item Sparse grooming 
-%\item Waveband grooming 
-%\item Summary
-%\end{enumerate}
-%\item Network engineering-based energy efficiency \begin{enumerate}[i]
-%\item Introduction
-%\item MLR based network model
-%\item Problem definition
-%\item MLR based WBS network
+Proposed table of contents of the final PhD thesis:
+\begin{enumerate}
+\item Preliminary remarks 
+\item A review of literature
+\begin{enumerate}[i]
+\item Introduction
+\item Flow induced vibrations 
+\item Flow induced vibrations as a mechanism of energy harvesting
+\item Aeroelastic galloping
+\item Behaviour of shear layer 
+\end{enumerate}
+\item Methodology and validation
+\begin{enumerate}[i]
+\item Introduction
+\item Governing equations and quasi-steady state model 
+\item Numerical methods and boundary conditions 
+\item The governing equations for the DNS method: Naiver-Stokes and continuity  
+\item Discretisation  
+\item Integration of substep equation 
+\item Boundary conditions 
+\item Spectral element method
+\item Convergence and validation studies 
+\item Summary
+\end{enumerate}
+\item Galloping response and natural frequency
+\begin{enumerate}[i]
+\item Introduction
+\item 
+
+\end{enumerate}
+\item Effect of mechanical parameters on power output
+\begin{enumerate}[i]
+\item Introduction
+\item Natural frequency 
+\item Damping constant 
+\item Mass ratio
 %\item Sleep mode enabled core network
-%\item Summary
-%\end{enumerate}
-%\item Conclusion
+\item Summary
+\end{enumerate}
+\item{Optimisation of the cross sectional shape for a better power output}
+\item{FSI validation}
+\item Conclusion
 %\begin{enumerate}[i]
 %\item Introduction
 %\item Summary of the work
 %\item Future directions
 %\end{enumerate}
-%\end{enumerate}
+\end{enumerate}
 %Each sub-section mentioned above could be further divided into sections, if necessary. For example, 3(v) could be divided as 3(v)(a) "ILP formulation", 3(v)(b) "Heuristic algorithm" and 3(v)(c) "Evaluation"
 %\newpage
 %\centering
