@@ -46,7 +46,7 @@ The stationary $C_y$ data obtained using flow simulations (Fig.\ref{cy ploynomia
  
  
  
- At region 1 where $U^*=90$ the damping constant is high and a clear sinusoidal signal could be observed for both $P_d$ and $P_t$ in Fig. \ref{fig:power_time_histories} (a). Fig.\ref{fig:power_time_histories} (d) and (g) shows that $\theta$ is in line or in phase with $F_y$.  The velocity amplitude in this case is small and the equivalent incident angle within the range where the hydrodynamic force increases with the incident angle (i.e. $0<\theta \leq < 4^0$ in Fig.\ref{fig:lift_curves} (a)) Hence both $P_d$ and $P_t$ becomes sinusoidal. In this case, power output is limited by the low fluid forces present at low incident angles. In other words damping is significantly high and extracts a lot of power that the velocity amplitude could not grow where the forcing  is significant to produce high level of power.   
+ At region 1 where $U^*=90$ the damping constant is high and a clear sinusoidal signal could be observed for both $P_d$ and $P_t$ in Fig.\ref{fig:power_time_histories} (a). Fig.\ref{fig:power_time_histories} (d) and (g) shows that $\theta$ is in line or in phase with $F_y$.  The velocity amplitude in this case is small and the equivalent incident angle within the range where the hydrodynamic force increases with the incident angle (i.e. $0<\theta \leq < 4^0$ in Fig.\ref{fig:lift_curves} (a)) Hence both $P_d$ and $P_t$ becomes sinusoidal. In this case, power output is limited by the low fluid forces present at low incident angles. In other words damping is significantly high and extracts a lot of power that the velocity amplitude could not grow where the forcing  is significant to produce high level of power.   
  
  
   At region 3 ($U^*= 400$) `$c$' is low in comparison with region 1 and 2 which leads to a low mean power output. Fig.\ref{fig:power_time_histories} (c) shows that $P_t$ becomes negative over some portion of the cycle. This is because $\theta$  passes the point where both $\theta$ and $C_y$ (therefore $F_y$) are positive. The high velocity amplitude leads to the equivalent incident angle $\theta$, in this case to exceed the range where $C_y$ is positive (i.e. $0<\theta<6^0$ in Fig.\ref{cy ploynomial} (a)). In this portion of the cycle the hydrodynamic force actually opposes the direction of travel and power is transferred from the structure to the fluid during those times. From and energy perspective, the mechanical damping is not sufficient to remover the energy transferred from the fluid to the structure during other times of the cycle because $\frac{c}{\rho\mathcal{A}U}$ is substantially low. Therefore this excess energy is transferred back to the fluid as depicted by the negative region of $P_d$ in Fig.\ref{fig:power_time_histories} (c) 
@@ -58,20 +58,25 @@ At region 2 ($U^*=165$). $P_t$ is not a pure sinusoidal signal. However, the  si
  
   
 \input{../figure/time_histories}
- 
-
 
 
 \subsection{Effect of $m^*$}
 
  \input{../figure/m_star_collapsed}
+ \input{../figure/mstar_parkinson}
 
-The maximum mean power at different $m^*$ (Fig.\ref{fig:m_star_collapsed}) was constant beyond $m^*=30$. However, at $m^* \leq 30$ an effect of $m^*$ it could be observed. Not only the peak value but overall reduction in the mean power could be observed when $m^*$ was reduced. When the galloping excitation is suppressed at low $m^*$, the system will exhibit a weak response as a result of forcing from vortex shedding. This was also reported by \cite{Joly2012} where galloping amplitude was reduced at low $m^*$. The suppression of galloping as $m^*$ is reduced can be explained by looking at the difference between the instantaneous power transfer between fluid to the structure $P_t$ and the power taken out by the mechanical damping $P_d$ in Fig.\ref{fig:power_time_histories}. While the time average of both quantities are the same, instantaneously they are not. Therefore the mechanical system is required to store power in certain points of the cycle and release it at another portion of the cycle. In cases where $m^*$ is very low, the system lack adequate inertia to store this power which leads to suppression of galloping. 
+The maximum mean power at different $m^*$ (Fig.\ref{fig:m_star_collapsed}(a)) was constant beyond $m^*=30$. However, at $m^* \leq 30$ an effect of $m^*$ it could be observed. Not only the peak value but overall reduction in the mean power could be observed when $m^*$ was reduced. However, when the sinusoidal forcing function in Eq.\ref{equationofmotion} which cater for the vortex shedding was disregarded, the reduction in power could not be observed Fig.\ref{fig:m_star_collapsed}(b). An influence of vortex shedding on power is present. This maybe dude to the reduction in inertia as the mass ratio is decreased. 
+
+At \reynoldsnumber=22300 two major phenomena was present. The maximum of the mean power tend to increase  as the $m^*$ was decreased while keeping the $U^*$ constant (Fig\ref{fig:mstarcollapsed_parkinson}(a)). The same effect was observed when $U^*$ was increased keeping $m^*$ constant (\ref{fig:mstarcollapsed_parkinson}(b)). It should be noted that the influence of $U^*$ was observed only for low mass ratios.  The velocity time traces of example cases of both scenarios Fig.\ref{time_history_mstar} and \ref{time_history_mstar} shows that essentially the same \hilight{phenomenon} occurring in both cases whereby the velocity signal tend to move towards a square from a sinusoidal signal.  
+
+  
 
 
-\input{../figure/mstar_parkinson}
 
 
+\input{../figure/time_history_msar_mass}
+
+\input{../figure/time_history_msar_ustar}
 
 
  \input{../figure/qss_fsi}
