@@ -7,7 +7,7 @@
 \usepackage{graphicx}
 \usepackage{url}
 \usepackage{tabulary}
-\usepackage[sort]{cite}
+%\usepackage[sort]{cite}
 %\usepackage[sort,nocompress]{cite}
 \usepackage{multirow}
 \usepackage{booktabs}
@@ -60,6 +60,12 @@ A simple structure that is susceptible to flow-induced vibrations that are suita
 
 \section{Research objectives}
 
+\begin{itemize}
+\item To understand the underpinning mechanical parameters of the system and find methods to optimize it to obtain a higher power output 
+\item To understand the governing fluid mechanics of a system under aeroelastic galloping 
+\item To identify methods to manipulate and control the fluid mechanics to obtain a better power output.  
+\end{itemize}
+
 
 
 
@@ -70,8 +76,9 @@ A simple structure that is susceptible to flow-induced vibrations that are suita
 Phase 1 has been completed which is investigating the behaviour of the mechanical characteristics of the system. The following conclusions were made. Further information could be found in \hilight{Appendix}
 
 \begin{itemize}
-\item   the system is not frequency dependent, but more dependent on the velocity amplitude.
+\item   The system is not frequency dependent, but more dependent on the velocity amplitude.
 \item The main tuning parameter on the mechanical system to obtain an optimum power output is the damping factor.
+\item An effect of the mass ratio could be observed as the mass ratio reduces for both higher and lower Reynolds numbers. 
 \end{itemize}
 
 \subsection{Phase-2}
@@ -80,7 +87,7 @@ As previously mentioned the fluid dynamics portion of the system is studied in p
 
 \subsubsection{Creation of the negative lift}
 
-In order to carry out an optimisation study on the fluid dynamics portion of the system, it is essential to study underlying fluid mechanics for galloping. It has been already established by \cite{Parkinson1964} that the instantaneous lift is the input of the system. Therefore it is essential to have an understanding on how exactly this lift occur. According to \cite{Parkinson1989},\hilight{Luo 94} the lift force is crated by the secondary flow of the two shear layers of either side of the body which creates an unbalanced pressure distribution on the afterbody. If a square cross section is taken as an example, when the body have a transverse $\dot{y}$, the relative velocity causes an instantaneous angle of attack which makes one shear layer lies closer to the body than the other. Therefore the shear layer near the body creates a pressure imbalance by creating a higher suction on the wall of the body on the adjacent side than the suction caused by the shear layer on the opposite side on its adjacent side of the body. The lift force become its maximum when the shear layer closer to the body re attaches at the trailing edge. As the angle of attack is further increased, the separated shear layer in the opposite side of the body (which was initially away from the body) shrinks therefore the pressure difference decreases which results a decrease in the lift force. This explanation was validated by \cite{Luo1994} by conducting flow visualisation experimentally.
+In order to carry out an optimisation study on the fluid dynamics portion of the system, it is essential to study underlying fluid mechanics for galloping. It has been already established by \cite{Parkinson1964} that the instantaneous lift is the input of the system. Therefore it is essential to have an understanding on how exactly this lift occur. According to \cite{Parkinson1989},\hilight{Luo 94} the lift force is created by the secondary flow of the two shear layers of either side of the body which creates an unbalanced pressure distribution on the afterbody. If a square cross section is taken as an example, when the body have a transverse $\dot{y}$, the relative velocity causes an instantaneous angle of attack which makes one shear layer lies closer to the body than the other. Therefore the shear layer near the body creates a pressure imbalance by creating a higher suction on the wall of the body on the adjacent side than the suction caused by the shear layer on the opposite side on its adjacent side of the body. The lift force become its maximum when the shear layer closer to the body re attaches at the trailing edge. As the angle of attack is further increased, the separated shear layer in the opposite side of the body (which was initially away from the body) shrinks therefore the pressure difference decreases which results a decrease in the lift force. This explanation was validated by \cite{Luo1994} by conducting flow visualisation experimentally.
 
 Therefore two parameters could be identified which governs the lift 
 
@@ -174,7 +181,7 @@ Proposed table of contents of the final PhD thesis:
 \item Summary 
 \end{enumerate}
 
-\item Fluid mechanics governing the induced forcing
+\item Optimisation of the cross sectional shape 
 \item FSI validation
 \item Conclusion
 %\begin{enumerate}[i]
@@ -183,9 +190,5 @@ Proposed table of contents of the final PhD thesis:
 %\item Future directions
 %\end{enumerate}
 \end{enumerate}
-%Each sub-section mentioned above could be further divided into sections, if necessary. For example, 3(v) could be divided as 3(v)(a) "ILP formulation", 3(v)(b) "Heuristic algorithm" and 3(v)(c) "Evaluation"
-%\newpage
-%\centering
-%\vspace*{2.5in}
 
 \end{document}
