@@ -17,7 +17,7 @@
 F_y=\frac{1}{2}\rho U^2\mathcal{A}C_y
 \end{equation}
 
- In the QSS  model $C_y$ is determined by an interpolating polynomial based on the lift and drag data  for flow over a stationary body at various angles of attack. The order of the interpolation polynomial has varied from study to study. For  example a $7^{th}$ polynomial order was used in \cite{Parkinson1964} and $3^{rd}$ order polynomial was used in \cite{Barrero-Gil2009}. \cite{Ng2005} concluded that using a $7^{th}$ order polynomial is sufficient and a polynomial higher than that of $7^{th}$ order polynomial neither provides a significantly better result nor does it exhibit an additional amplitudes of oscillation. Thus a $7 ^{th}$ order interpolating polynomial was incorporated in this present study. 
+ In the QSS  model $C_y$ is determined by an interpolating polynomial based on the lift and drag data  for flow over a stationary body at various angles of attack. The order of the interpolation polynomial has varied from study to study. For  example a $7^{th}$ order polynomial was used in \cite{Parkinson1964} and $3^{rd}$ order polynomial was used in \cite{Barrero-Gil2009}. \cite{Ng2005} concluded that using a $7^{th}$ order polynomial is sufficient and a polynomial higher than that of $7^{th}$ order polynomial neither provides a significantly better result nor does it exhibit an additional amplitudes of oscillation. Thus a $7 ^{th}$ order interpolating polynomial was incorporated in this present study. 
 
 \begin{equation}
 \label{cy ploynomial}
@@ -36,7 +36,7 @@ C_y(\theta)=a_1\left(\frac{\dot{y}}{U}\right)+a_3\left(\frac{\dot{y}}{U}\right)^
 (m{+}m_a)\ddot{y}{+}c{+}\dot{y}{+}ky{=}\frac{1}{2}\rho U^2 \mathcal  {A} \Bigg(a_1\left(\frac{\dot{y}}{U}\right){+}a_3\left(\frac{\dot{y}}{U}\right)^3{+}a_5\left(\frac{\dot{y}}{U}\right)^5{+}a_7\left(\frac{\dot{y}}{U}\right)^7 \Bigg){+} F_0\sin{(\omega_s t)}
 \end{equation}
 
-This equation could be solved by time integration methods. In  this study  `Ode 45' routine in MATLAB was used to obtain the solutions.
+This equation could be solved by time integration methods. In  this study  `Ode 45' routine in MATLAB was used to obtain the solutions. However in certain cases (low mass ratios) `Ode 15s' routine was used when Ode 45 tend to diverge.
 
 \subsection{Calculation of average power}
 
