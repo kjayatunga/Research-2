@@ -47,7 +47,7 @@
 \tableofcontents
 
 \section{Introduction}
-The search for alternative energy sources which could be categorised under the ”green” label has become important area of research in the modern word. Solar, wind power and wave power are some of the examples of these sources. Recently,a new branch of research has been developing to extract energy from flow induced vibrations. It has been hypothesized that this technique may work efficiently in areas where regular turbines cannot.
+The search for alternative energy sources which could be categorised under the ”green” label has become important area of research in the modern word. Solar, wind power and wave power are some of the examples of these sources. Recently, a new branch of research has been developing to extract energy from flow induced vibrations. It has been hypothesized that this technique may work efficiently in areas where regular turbines cannot. 
 A simple structure that is susceptible to flow-induced vibrations that are suitable for energy extraction are slender structures,such as cylinders, elastically mounted perpendicular to a fluid stream. With regards to a slender body two common types of   flow induced vibrations are Vortex Induced Vibrations (VIV) and aeroelastic galloping. Significant research has been carried out by Bernitsas and his team on extracting useful energy from VIV. Some of their significant work includes investigating the influence  of physical parameters such as mass ratio (the ratio of the mass of the cylinder and the displaced fluid), Reynolds number, mechanical properties(\cite{Raghavan2010a} ,\cite{Lee2011b}) and location (effect of the bottom boundary) (\cite{Raghavan2009}). However,the possibility of extracting energy using aeroelastic galloping has not been thoroughly investigated. Some theoretical work was carried out by (\cite{Barrero-Gil2010a}). Utilizing galloping may be a more viable method to harness energy from flow induced vibrations as it is not bounded by a "lock-in" range of reduced velocities(ratio between the freestream velocity and the product of the natural frequency of the system and the characteristic length).Therefore it is preferable to investigate further the possibility of harnessing energy from flow induced vibrations using aeroelastic galloping. 
 
 \section{Research focus}
@@ -55,19 +55,15 @@ A simple structure that is susceptible to flow-induced vibrations that are suita
  
 \begin{enumerate}[]
 \item Phase 1: Optimise the mechanical characteristics of the system.
-\item Phase 2: Optimise the fluid dynamics portion of the system 
+\item Phase 2: Optimise the fluid dynamics of the galloping excitation.
 \end{enumerate}
 
 \section{Research objectives}
 
 \begin{itemize}
 \item To understand the underpinning mechanical parameters of the system and find methods to optimize it to obtain a higher power output 
-\item To understand the governing fluid mechanics of a system under aeroelastic galloping 
-\item To identify methods to manipulate and control the fluid mechanics to obtain a better power output.  
+\item To understand the governing fluid mechanics of a system under aeroelastic galloping and identify methods to manipulate and control the fluid mechanics to obtain a better power output.  
 \end{itemize}
-
-
-
 
 \section{Research progress}
 
@@ -78,7 +74,7 @@ Phase 1 has been completed which is investigating the behaviour of the mechanica
 \begin{itemize}
 \item   The system is not frequency dependent, but more dependent on the velocity amplitude.
 \item The main tuning parameter on the mechanical system to obtain an optimum power output is the damping factor.
-\item An effect of the mass ratio could be observed as the mass ratio reduces for both higher and lower Reynolds numbers. 
+%\item An effect of the mass ratio could be observed as the mass ratio reduces for both higher and lower Reynolds numbers. 
 \end{itemize}
 
 \subsection{Phase-2}
@@ -92,8 +88,10 @@ In order to carry out an optimisation study on the fluid dynamics portion of the
 Therefore two parameters could be identified which governs the lift 
 
 \begin{itemize}
-\item{ The characteristics of the afterbody}
-\item{Shear layer separation}
+\item The characteristics of the afterbody
+\item Shear layer separation
+\item Shear layer reattachment 
+
 \end{itemize}
  %\input{./figures/luo_sketch}.
 \cite{Luo1994} have done some interesting studies on the lift characteristics on trapezoidal bodies. Which essentially the top and bottom sides of a square were tapered away systematically until it becomes triangle which is depicted in \hilight{Figure}. According to the data presented \cite{Luo1994} the highest lift is produced by the triangle. However, the maximum lift occur at a very large angle of attack ($\theta\approx 34^0 $) compared to a square cross section ($\theta\approx 12^0 $).
@@ -107,25 +105,23 @@ According to the literature survey done so far, investigations have been carried
 \item{Trapezium}
 \end{itemize}
    
-Our hypothesis is that the cross section could be further optimised to get a higher power output by incorporating a complex shape which is a combination of the basic shapes. The current suggestion is that to analyse the characteristics of a hybrid shape of square and triangle. The idea is to delay the shear layer reattachment. which may result in having a larger band of induced angles where the forcing is substantially high. This will eventually then lead to a higher mean power output.
+Our hypothesis is that the cross section could be further optimised to get a higher power output by incorporating a complex shape which is a combination of the basic shapes. The current suggestion is that to analyse the characteristics of a hybrid shape of square and triangle. The idea is to delay the shear layer reattachment by tapering away the afterbody of the square cross section. This may result in having a larger band of induced angles where the forcing is substantially high. This will eventually then lead to a higher mean power output.
+
+\input{./figures/proposed_sketch}
+
+
+
+
 
 \begin{itemize}
 \item{The stationary $c_y$ data of basic cross sections (i.e square, triangle and trapezium) will be obtained using DNS simulations at laminar flow. The data will be compared with existing literature. The time averaged pressure fields will be obtained in order to analyse the behaviour of the shear layers.}
-\item{The stationary data of the complex shape shown in \hilight{Figure} will be obtained together with the time average pressure fields where the behaviour of the shear layers could be analysed.}
-\item{Based on the initial results an optimisation study will be carried out by changing $l$ and $h$. The quasi-steady model will be used to obtain the power output.}
+\item{The stationary data of the complex shape shown in Fig.\ref{fig:complex_shape} will be obtained together with the time average pressure fields where the behaviour of the shear layers could be analysed.}
+\item{Based on the initial results an optimisation study will be carried out by changing $\frac{d}{l}$. The quasi-steady model will be used to obtain the power output.}
 \item{FSI simulations will be carried out and the power output will be compared with the data obtained using quasi-steady model.}
 \end{itemize}  
 
 
- 
- 
 
-
-
-
-
-
- 
 
 %\begin{figure}[h]
 %\centering
@@ -140,8 +136,8 @@ Our hypothesis is that the cross section could be further optimised to get a hig
 %%\begin{enumerate}
 %%      
 %%\end{enumerate}
-%\bibliographystyle{elsarticle-harv}
-%\bibliography{../bibtex/MCR}
+\bibliographystyle{elsarticle-harv}
+\bibliography{../bibtex/paper}
 %\appendix
 %%\begin{center}
 %%\section*{\LARGE Appendix 1}
@@ -178,11 +174,22 @@ Proposed table of contents of the final PhD thesis:
 \item Natural frequency 
 \item Damping constant 
 \item Mass ratio
+\item FSI validation 
 \item Summary 
 \end{enumerate}
 
 \item Optimisation of the cross sectional shape 
+\begin{enumerate}[i]
+\item Introduction 
+\item Stationary data of basic shapes  
+\item Stationary data of the hybrid cross section
+\item Flow analysis  
+\item Optimisation of the hybrid cross section 
+\item Power analysis 
 \item FSI validation
+\item Summary 
+\end{enumerate}
+
 \item Conclusion
 %\begin{enumerate}[i]
 %\item Introduction
