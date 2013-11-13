@@ -5,13 +5,13 @@
 \usepackage{a4wide}
 \usepackage{amsmath,amssymb}
 \usepackage{graphicx}
-\usepackage{url}
+%\usepackage{url}
 \usepackage{tabulary}
 %\usepackage[sort]{cite}
 %\usepackage[sort,nocompress]{cite}
 \usepackage{multirow}
 \usepackage{booktabs}
-\usepackage{placeins}
+%\usepackage{placeins}
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{epstopdf}
@@ -29,6 +29,7 @@
 %\department{\emph{Department of Electrical and Computer Systems Engineering}}
 %\title{Towards a Green Optical Internet}
 %\author{Nishan Dharmaweera \and Rajendran Parthiban \and Y. Ahmet \c{S}ekercio\u{g}lu}
+
 \begin{document}
 
 \begin{titlepage}
@@ -83,7 +84,7 @@ As previously mentioned the fluid dynamics portion of the system is studied in p
 
 \subsubsection{Creation of the negative lift}
 
-In order to carry out an optimisation study on the fluid dynamics portion of the system, it is essential to study underlying fluid mechanics for galloping. It has been already established by \cite{Parkinson1964} that the instantaneous lift is the input of the system. Therefore it is essential to have an understanding on how exactly this lift occur. According to \cite{Parkinson1989},\hilight{Luo 94} the lift force is created by the secondary flow of the two shear layers of either side of the body which creates an unbalanced pressure distribution on the afterbody. If a square cross section is taken as an example, when the body have a transverse $\dot{y}$, the relative velocity causes an instantaneous angle of attack which makes one shear layer lies closer to the body than the other. Therefore the shear layer near the body creates a pressure imbalance by creating a higher suction on the wall of the body on the adjacent side than the suction caused by the shear layer on the opposite side on its adjacent side of the body. The lift force become its maximum when the shear layer closer to the body re attaches at the trailing edge. As the angle of attack is further increased, the separated shear layer in the opposite side of the body (which was initially away from the body) shrinks therefore the pressure difference decreases which results a decrease in the lift force. This explanation was validated by \cite{Luo1994} by conducting flow visualisation experimentally.
+In order to carry out an optimisation study on the fluid dynamics portion of the system, it is essential to study underlying fluid mechanics for galloping. It has been already established by \cite{Parkinson1964} that the instantaneous lift is the input of the system. Therefore it is essential to have an understanding on how exactly this lift occur. According to \cite{Parkinson1989},\hilight{Luo 94} the lift force is created by the secondary flow of the two shear layers of either side of the body which creates an unbalanced pressure distribution on the afterbody. If a square cross section is taken as an example, when the body have a transverse $\dot{y}$, the relative velocity causes an instantaneous angle of attack which makes one shear layer lies closer to the body than the other. Therefore the shear layer near the body creates a pressure imbalance by creating a higher suction on the wall of the body on the adjacent side than the suction caused by the shear layer on the opposite side on its adjacent side of the body. The lift force become its maximum when the shear layer closer to the body reattaches at the trailing edge. As the angle of attack is further increased, the separated shear layer in the opposite side of the body (which was initially away from the body) shrinks therefore the pressure difference decreases which results a decrease in the lift force. This explanation was validated by \cite{Luo1994} by conducting flow visualisation experimentally.
 
 Therefore two parameters could be identified which governs the lift 
 
@@ -137,12 +138,13 @@ Our hypothesis is that the cross section could be further optimised to get a hig
 %%      
 %%\end{enumerate}
 \bibliographystyle{elsarticle-harv}
+
 \bibliography{../bibtex/paper}
-%\appendix
-%%\begin{center}
-%%\section*{\LARGE Appendix 1}
-%%\addcontentsline{toc}{section}{Appendix 1} 
-%%\end{center}
+\appendix
+\begin{center}
+\section*{\LARGE Appendix 1}
+\addcontentsline{toc}{section}{Appendix 1} 
+\end{center}
 Proposed table of contents of the final PhD thesis:
 \begin{enumerate}
 \item Preliminary remarks 
