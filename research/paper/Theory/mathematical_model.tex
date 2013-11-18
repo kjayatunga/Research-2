@@ -17,7 +17,7 @@
 F_y=\frac{1}{2}\rho U^2\mathcal{A}C_y
 \end{equation}
 
- In the QSS  model $C_y$ is determined by an interpolating polynomial based on the lift and drag data  for flow over a stationary body at various angles of attack. The order of the interpolation polynomial has varied from study to study. For  example a $7^{th}$ order polynomial was used in \cite{Parkinson1964} and $3^{rd}$ order polynomial was used in \cite{Barrero-Gil2009}. \cite{Ng2005} concluded that using a $7^{th}$ order polynomial is sufficient and a polynomial higher than that of $7^{th}$ order polynomial neither provides a significantly better result nor does it exhibit an additional amplitudes of oscillation. Thus a $7 ^{th}$ order interpolating polynomial was incorporated in this present study. 
+ In the QSS  model $C_y$ is determined by an interpolating polynomial based on the lift and drag data  for flow over a stationary body at various angles of attack. The order of the interpolation polynomial has varied from study to study. For  example a $7^{th}$ order polynomial was used in \cite{Parkinson1964} and $3^{rd}$ order polynomial was used in \cite{Barrero-Gil2009}. \cite{Ng2005} concluded that using a $7^{th}$ order polynomial is sufficient and a polynomial higher than that of $7^{th}$ order polynomial doesn't provides a significantly better result. Thus a $7 ^{th}$ order interpolating polynomial was incorporated in this present study. 
 
 \begin{equation}
 \label{cy ploynomial}
@@ -29,14 +29,14 @@ C_y(\theta)=a_1\left(\frac{\dot{y}}{U}\right)+a_3\left(\frac{\dot{y}}{U}\right)^
 %\ddot{y}+c^*\dot{y}+k^*y=\frac{1}{2}\rho U^2A
 %\end{equation}
 
-\cite{Joly2012} introduced  an addition of a sinusoidal forcing function to the hydrodynamic forcing. This enables to model to provide accurate predictions even at low mass ratios where galloping excitation is suppressed or not present. In this study, the forcing due to VIV is incorporated using a sinusoidal forcing function $F_0\sin{\omega_{s}t}$ added to the RHS of the equation. $\omega_{s}$ and $F_0$ represents shedding frequency and the maximum force due to shedding respectively. Thus, the final equation is given by Eq.\eqref{final_equation_motion}.    
+ It is expected that vortex shedding will be well correlated across the span and provide significant forcing at low \reynoldsnumber.\cite{Joly2012} introduced  an addition of a sinusoidal forcing function to the hydrodynamic forcing to model this. This enables to model to provide accurate predictions even at low mass ratios where galloping excitation is suppressed or not present. In this study, the forcing due to vortex shedding in low \reynoldsnumber cases is incorporated using a sinusoidal forcing function $F_0\sin{\omega_{s}t}$ added to the RHS of the equation. $\omega_{s}$ and $F_0$ represents shedding frequency and the maximum force due to shedding respectively. Thus, the final equation is given by Eq.\eqref{final_equation_motion}.    
 
 \begin{equation}
 \label{final_equation_motion}
 (m{+}m_a)\ddot{y}{+}c{+}\dot{y}{+}ky{=}\frac{1}{2}\rho U^2 \mathcal  {A} \Bigg(a_1\left(\frac{\dot{y}}{U}\right){+}a_3\left(\frac{\dot{y}}{U}\right)^3{+}a_5\left(\frac{\dot{y}}{U}\right)^5{+}a_7\left(\frac{\dot{y}}{U}\right)^7 \Bigg){+} F_0\sin{(\omega_s t)}
 \end{equation}
 
-This equation could be solved by time integration methods. In  this study  `Ode 45' routine in MATLAB was used to obtain the solutions. However in certain cases (low mass ratios) `Ode 15s' routine was used when Ode 45 tend to diverge.
+This equation could be solved by time integration methods. In  this study  `Ode 45' routine in MATLAB was used to obtain the solutions. However in certain cases (low mass ratios) `Ode 15s' routine was used when Ode 45 had issues with stability due to the non-linear nature of the forcing.
 
 \subsection{Calculation of average power}
 
@@ -54,7 +54,7 @@ P_{mean}=\frac{1}{T}\int_{0}^{T}(c\dot{y})\dot{y} dt
  
 \subsection{Parameters used} 
  
-The stationary data and the fluid-structure interaction (FSI) data were obtained using a higher order spectral element code to simulate the two-dimensional laminar flow. The Reynolds number was kept at 165 as it was pointed out by \cite{Sheard2009} and \cite{Tong2008} that the 3 dimensional transition for a square cylinder occurs at approximately Re=160. $F_0$ was kept at $0.4937$ which was obtained by scaling the value used by \cite{Joly2012} with the amplitude ratios of the lift forces obtained at the different Reynolds numbers. 
+The stationary data and the fluid-structure interaction (FSI) data were obtained using a high order spectral element routine to simulate the two-dimensional laminar flow. The Reynolds number was kept at 165 as it was pointed out by \cite{Sheard2009} and \cite{Tong2008} that the 3 dimensional transition for a square cylinder occurs at approximately Re=160. $F_0$ was kept at $0.4937$ which was obtained by scaling the value used by \cite{Joly2012} with the amplitude ratios of the lift forces obtained at the different Reynolds numbers. 
 
 
 
@@ -65,7 +65,7 @@ Shedding frequency $\omega_s$, was set to $0.98$ which was obtained by performin
 and the averaging was done over no less than 20 galloping periods. Predictions of power output at Re=22300 were obtained using coefficients for curve fitting $C_y$ (Table (\ref{table:cy-coefficients})) from \cite{Parkinson1964} in order to provide a comparison between high and low Reynolds numbers. $m^*$ was kept at 1163 for \reynoldsnumber=22300 (Similar as \cite{Parkinson1964}) and $m^*=20$ for \reynoldsnumber=165. These parameters  were used throughout this study unless otherwise specified. 
 
 
- FSI data were obtained for the oscillating (free-vibration) scenario. The Naiver-Stokes equations were solved using an accelerated frame of reference using the previously mentioned code. A three-step time splitting scheme together with high-order Lagrangian polynomials were used to obtain the solution. The details of the method could be found in \cite{Thompson2006,Thompson1996a}. This code was incorporated in \cite{Leontini2011,Leontini2007a}  where it was employed in a fluid-structure interaction problems. 
+ Simulations involving fluid structure interaction (FSI) were used to provide additional validation of the QSS model. The inlet was placed $20D$ while the outlet situated $60D$ away from the centroid of the body. The side boundaries were placed $20D$ away from the centroid of the body where $D$ was kept as unity throughout this study. The Naiver-Stokes equations were solved using an accelerated frame of reference using the previously mentioned code. A three-step time splitting scheme together with high-order Lagrangian polynomials were used to obtain the solution. The details of the method could be found in \cite{Thompson2006,Thompson1996a}. This code was incorporated in \cite{Leontini2011,Leontini2007a}  where it was employed in a fluid-structure interaction problems. 
  
  The computational domain consists of 690 quadrilateral macro elements where majority of the elements were concentrated near the square section. A freestream condition was given to the inlet, top and bottom boundaries and the normal velocity gradient was set to zero at the outlet. A convergence study was performed by changing the order of the polynomial ($p$-refinement) at $U^*=40$ and \reynoldsnumber=$165$. A $9^{th}$ order polynomial together with a time step of $\frac{\Delta tU}{D}=0.001$ was sufficient to ensure an accuracy of $2\%$ with regards to amplitude of oscillation.  
  
