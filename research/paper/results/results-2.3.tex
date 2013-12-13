@@ -9,7 +9,7 @@ However, there are several differences that can be observed when the low \reynol
 
 It was concluded by \cite{Luo2003} that hysteresis in the system response occurs due to the inflection point in the $C_y$ curve. Therefore hysteresis is not expected at $\reynoldsnumber=165$.
 
-The range of incident flow angles where $C_y$ remains positive is narrow at $\reynoldsnumber=165$ ($0^\circ <\theta \leq$ $6^\circ$) compared to $\reynoldsnumber=22300$ ($0^\circ <\theta \leq 15^\circ$). This feature is what sustains galloping. Power is only transferred from the fluid to the supporting structure within this range of incident angles because fluid forces are acting in the direction of travel of the oscillating cylinder, as demonstrated by equation \ref{power_alt}. Incident angles beyond this range actually suppress the galloping and power goes in the opposite direction, i.e; form body to fluid. Therefore due to the overall smaller $C_y$ and narrow range of angles where $C_y$ is positive for $\reynoldsnumber=165$ compared to $\reynoldsnumber=22300$, it is expected that power output at $\reynoldsnumber=165$ is significantly lower than at $\reynoldsnumber=22300$. 
+The range of incident flow angles where $C_y$ remains positive is narrow at $\reynoldsnumber=165$ ($0^\circ <\theta \leq$ $6^\circ$) compared to $\reynoldsnumber=22300$ ($0^\circ <\theta \leq 15^\circ$). This feature is what sustains galloping. Power is only transferred from the fluid to the supporting structure within this range of incident angles because fluid forces are acting in the direction of travel of the oscillating body, as demonstrated by equation \ref{power_alt}. Incident angles beyond this range actually suppress the galloping and power goes in the opposite direction, i.e; form body to fluid. Therefore due to the overall smaller $C_y$ and narrow range of angles where $C_y$ is positive for $\reynoldsnumber=165$ compared to $\reynoldsnumber=22300$, it is expected that power output at $\reynoldsnumber=165$ is significantly lower than at $\reynoldsnumber=22300$. 
 
 \input{../figure/uncollapsed_data}
 
@@ -31,9 +31,54 @@ The efficiency of the system can be defined as the ratio of the time average pow
  
 \JL{KASUN: I don't understand the above paragraph. What is the main point of this paragraph? Are you trying to show that the only the terms dependent on $\dot{y}$ are dissipative, and so only those terms contribute to the transfer of energy or power to the body? That is true, but that is also true for VIV, so I don't see how that shows that the ``system is governed by the transverse velocity rather than the natural frequency''. I definitely don't understand that last sentence. Do you mean ``power'' when you say ``system''? The problem is that, as I've pointed out, the exact same argument regarding dissipation applies to VIV, which is strongly dependent on the natural frequency.}
 
+%%%%%%%%%
+The data presented in figure \ref{fig:uncollapsed_data} show that, regardless of the damping ratio $\zeta$, the trend of the response with $U^*$ is similar, suggesting the data can be collapsed by a suitable choice of parameters. These parameters can be found by considering the natural time scales of the equations of motion presented in equation \ref{final_equation_motion}, and by suitably non-dimensionalizing these equations.
+
+The natural time scales of the system can be found by solving for the eigenvalues of the linearized equation of motion, namely
+\begin{equation}
+\label{eqn:eom_linear}
+(m{+}m_a)\ddot{y}{+}c\dot{y}{+}ky{=}\frac{1}{2}\rho U^2 \mathcal{A} a_1\left(\frac{\dot{y}}{U}\right),
+\end{equation}
+which is simply the equation of motion presented in equation \ref{final_equation_motion} with the polynomial series for the lift force truncated at the linear term, and the forcing term representing vortex shedding removed.
+
+Combining the $\dot{y}$ terms and solving for eigenvalues gives
+\begin{equation}
+  \label{eqn:eigs}
+  \lambda_{1,2}= -\frac{1}{2}\frac{c-\frac{1}{2}\rho U^2\mathcal{A}a_1}{mU}\pm\frac{1}{2}\sqrt{\left[\frac{c-\frac{1}{2}\rho U^2\mathcal{A}a_1}{mU}\right]^2-4\frac{k}{m}}.
+\end{equation}
+
+If it is assumed that the spring is relatively weak, $k\rightarrow 0$, a single non-zero eigenvalue remains. This eigenvalue is
+\begin{equation}
+  \label{eqn:eigs_nospring}
+  \lambda=-\frac{c-\frac{1}{2}\rho U^2\mathcal{A}a_1}{mU}.
+\end{equation}
+
+Further, if it is assumed that the mechanical damping is significantly weaker than the aerodynamic forces on the body, $c\rightarrow 0$ and
+\begin{equation}
+  \label{eqn:eigs_nospring_nodamp}
+  \lambda=\frac{\frac{1}{2}\rho U^2\mathcal{A}a_1}{mU}.
+\end{equation}
+
+In this form, $\lambda$ represents the inverse time scale of the of the motion of the body due to the negative damping effect of the long-time aerodynamic forces. In fact, the terms can be regrouped and $\lambda$ written as
+\begin{equation}
+  \label{eqn:timescale}
+  \lambda = \frac{a_1}{m^*}\frac{U}{D}
+\end{equation}
+
+Written this way, the important parameters that dictate this inverse time scale are clear. The rate of change in the aerodynamic force with respect to angle of attackwhen the body is at the equilibrium position, $\partial C_y/\partial \alpha$, is represented by $a_1$. The mass ratio is represented by $m^*$. The inverse advective time scale of the incoming flow is represented by the ratio $U/D$. Increasing $a_1$ would mean the force on the body would increase more rapidly with small changes in the angle of attack, $\theta$, or transverse velocity. Equation \ref{eqn:timescale} shows that such a change will increase the inverse time scale, or analogously dcrease the response time of the body. Increasing the mass of the body, thereby increasing $m^*$, has the opposite effect. The inverse time scale is decreased, or as might be expected, a heavier body will take longer to respond.
+
+This timescale can then be used to non-dimensionalize the equation of motion, and to find the relevant dimensionless groups of the problem. If the non-dimensional time, $\tau$, is defined such that $\tau=t(a_1/m^*)(U/D)$, the equation of motion presented in equation \ref{final_equation_motion} can be non-dimensionalized as
+\begin{equation}
+  \label{eqn:eom_nondim}
+  \ddot{Y} + \frac{m^{*2}}{a_1^2}\frac{k}{m}\frac{D^2}{U^2}Y = \left(\frac{1}{2} - \frac{m^*}{a_1}\frac{cD}{mU}\right)\dot{Y} \dots
+\end{equation}
+%%%%%%%%%
+
+\JL{Stopped here}
+
  Using $U^*$ and $\zeta$ assumes that the system has a preferred frequency because the scale with the natural frequency of the system. The effect of fixing $\zeta$ and increasing $U^*$ actually decreases the damping constant for a fixed free-stream velocity. ($U^*=\frac{U}{f \times D}$, $\zeta= \frac{c}{2 m \omega_n}$ ). Both these effects leads to the multiple lines that are horizontally transpose when $\zeta$ is increased (Fig.\ref{fig:uncollapsed_data} (e) and (f)). Therefore the effect of $\zeta$ essentially scales up the damping coefficient for a fixed $U^*$.
  
- The data presented in Fig.\ref{fig:uncollapsed_data} for various damping ratios, $\zeta$, can be collapsed into a single line for a for a particular force characteristic curve (i.e $C_y$ vs $\theta$ curve). These collapsed curves were  obtained for the velocity amplitude  and power by plotting as functions of as a function of  the non dimensionalised  damping constant $\frac{c}{\rho\mathcal{A}U}$ 
+ The data presented in Fig.\ref{fig:uncollapsed_data} for various damping ratios, $\zeta$, can be collapsed into a single line for a particular force characteristic curve (i.e $C_y$ vs $\theta$ curve). These collapsed curves were  obtained for the velocity amplitude  and power by plotting as functions of as a function of  the non dimensionalised  damping constant $\frac{c}{\rho\mathcal{A}U}$ 
 (Fig \ref{fig:collpased_data} (a),(b),(c) and (d)).  This further emphasizes that the galloping system is not frequency dependent. It is possible to obtain a similar power output at different values of \ustar when the damping constant, $\frac{c}{\rho\mathcal{A}U}$, is kept fixed. An example of this case, as shown in Fig.\ref{fig:time_hostory_velocity_same_power}, clearly show that this is a result of similar velocity amplitudes between cases if one were to disregard the high frequencies due to shedding. As mentioned earlier, it is the transverse velocity that determines the energy provided by the fluid forcing and the mechanical damping.
 
 \input{../figure/collapsed_data}
