@@ -58,9 +58,13 @@
 %% \usepackage{amsthm}
 \newcommand\solidrule[1][1cm]{\rule[0.5ex]{#1}{1pt}}
 \newcommand\dashedrule{\mbox{\solidrule[1mm]\hspace{1mm}\solidrule[1mm]\hspace{1mm}\solidrule[1mm]\hspace{1mm}}}
+
 \newcommand{\ustar}{\ensuremath{U^{*}}}
 \newcommand{\cstar}{\ensuremath{c^{*}}}
 \newcommand{\reynoldsnumber}{\ensuremath{Re}}
+\newcommand{\massstiff}{\ensuremath{\Pi_1}}
+\newcommand{\massdamp}{\ensuremath{\Pi_2}}
+
 \newcommand{\Tan}[1]{{\textcolor{blue}{{\bf{\it{ **Tan: #1 **}}}}}}
 \newcommand{\JL}[1]{{\textcolor{red}{{\bf{\it{ **JL: #1 **}}}}}}
 
@@ -130,11 +134,11 @@
 \address{}
 
 \begin{abstract}
-Extracting useful energy from flow induced vibrations has become a developing area of research in recent years. In this paper, we analyse power transfer of an elastically mounted body under the influence of aeroelastic galloping. The system and the power transfer is analysed by numerically integrating the quasi-steady state model equations. The power transfer is analysed for both high (\reynoldsnumber=22300) and low (\reynoldsnumber=165) Reynolds numbers cases, and the impact of the system mass is investigated for both.
+Extracting useful energy from flow induced vibrations has become a developing area of research in recent years. In this paper, we analyse power transfer of an elastically mounted body under the influence of aeroelastic galloping. The system and the power transfer is analysed by numerically integrating the quasi-steady state model equations. The power transfer is analysed for both high ($\reynoldsnumber=22300$) and low ($\reynoldsnumber=165$) Reynolds numbers cases, and the impact of the system mass is investigated for both.
 
-At high mass ratios ($m^*>50$), the system is not frequency dependent. The damping coefficient was shown to be the only control parameter that governed power output. The system is a balance between the power delivered to the system due to hydrodynamic forcing and power removed through mechanical damping which are governed by the hydrodynamic forcing characteristics (i.e. the $C_y$ as a function of incident angle) and mechanical damping coefficient respectively.  The peak efficiency of $0.26\%$ for \reynoldsnumber=165 and $6.7\%$ for \reynoldsnumber=22300 were observed when the non dimensionalised damping factor ($\cstar=\frac{c}{\rho \mathcal{A}U}$) becomes 0.314 and 1.04 respectively.
+At high mass ratios ($m^*>50$), the power transfer is completely controlled by galloping and essentially independent of the mass. A combined mass-damping coefficient,\massdamp, that can be derived from the equation of motion, is shown to be the parameter that governs power output. The system is a balance between the power delivered to the system due to hydrodynamic forcing and power removed through mechanical damping which are governed by the hydrodynamic forcing characteristics (i.e. the lift force as a function of incident angle) and mechanical damping coefficient respectively.  The peak efficiency of $0.26\%$ for $\reynoldsnumber=165$ and $6.7\%$ for $\reynoldsnumber=22300$ were observed when the non-dimensionalised mass-damping factor becomes 0.314 and 1.04 respectively.
 
-A contradictory behaviour is observed at low $m^*$ between the low and high \reynoldsnumber cases. The forcing due to vortex shedding at low Reynolds numbers  suppresses the galloping excitation and results in a reduced power output. Power output increases as $m^*$ is reduced for the case with high \reynoldsnumber. At low $m^*$, the reduction in inertia allows the body to accelerate faster and spend a larger portion of the period at relatively high transverse velocities. Extrapolating this trend, the limit to peak efficiency is $13.5\%$ and occurs when $m^*\rightarrow 0$ and $\ustar \rightarrow \infty$ and $\cstar=1.22$
+A contradictory behaviour is observed at low $m^*$ between the low and high \reynoldsnumber\ cases. The forcing due to vortex shedding at low Reynolds numbers  suppresses the galloping excitation and results in a reduced power output. For the case with high \reynoldsnumber\ power output increases as $m^*$ is reduced . For this high \reynoldsnumber\ case, at low $m^*$ the reduction in inertia allows the body to accelerate faster and spend a larger portion of the period at relatively high transverse velocities. Extrapolating this trend, the limit to peak efficiency is found to be $13.5\%$ and occurs when $m^*\rightarrow 0$ and $\ustar \rightarrow \infty$ and $\massdamp=1.22$
 
 
 
