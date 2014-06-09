@@ -4,11 +4,12 @@ Fluid-elastic galloping is one of the sub-areas of research in fluid structure i
 
 According to \citet{Paidoussis2010}, \citet{Glauert1919} provided a criterion for galloping by considering the auto-rotation of an aerofoil.  \citet{DenHartog1956} provided a theoretical explanation for galloping for iced electric transmission lines. A weakly non-linear theoretical aeroelastic model to predict the response of galloping was developed by \citet{Parkinson1964} based on the quasi-steady state hypothesis. Experimental lift and drag data on a fixed square prism at different angles of attack were used as an input for the theoretical model. It essentially used a curve fit of the transverse force to predict the galloping response. The study managed to achieve a good agreement with experimental data.
 
-However, the QSS model equation when solved analytically using the sinusoidal solution method cannot predict the response for cases with low mass ratios. \citet{Joly2012} observed that finite element simulations show a sudden change in amplitude below a critical value of the mass ratio. The quasi-oscillator equation in \citet{Parkinson1964} was altered to account for the vortex shedding and solved numerically to predict the reduced amplitude at low mass ratios to the point where galloping is no longer present. \citet{Barrero-Gil2010a} investigated the possibility of extracting power from vibrations caused by galloping using the quasi-steady state model. In the conclusions of that paper it was pointed out that in order to obtain a high power to area ratio, the mass-damping ($m^*\zeta$) parameter should be kept low. The same study investigated the influence of the characteristics of the $C_y$ curve on maximum power output.
+However, the QSS model equation when solved analytically using the sinusoidal solution, cannot predict the response for cases with low mass ratios. \citet{Joly2012} observed that finite element simulations show a sudden change in amplitude below a critical value of the mass ratio. The quasi-oscillator equation in \citet{Parkinson1964} was altered to account for the vortex shedding and solved numerically to predict the reduced displacement amplitude at low mass ratios to the point where galloping is no longer present. \citet{Barrero-Gil2010a} investigated the possibility of extracting power from vibrations caused by galloping using the quasi-steady state model. So far the studies on galloping using quasi-steady state assumption has been mainly focused on understanding the behaviour of the displacement amplitude. Although, it is quite important to analyse the behaviour of the velocity when studying the power transfer from the fluid to the body. This is because power could be simply defined as the product the force and velocity. This study also focuses on how well the QSS model perform at high damping at low Reynolds numbers. 
 
-Here, the modified QSS model developed by \citet{Joly2012} is integrated numerically for low Reynolds numbers. The focus is on the power transfer from the fluid to the structure and the influence of mechanical parameters (i.e. frequency of oscillation, damping factor and mass ratio). To this end, a series of previously mentioned mechanical parameters are tested at two different values of \reynoldsnumber: $\reynoldsnumber = 165$, a case that should remain laminar and essentially two-dimensional; $\reynoldsnumber = 22300$, a case where the flow is expected to be turbulent and three-dimensional. Both cases require the input of transverse force coefficients $C_y$ as a function of angle of attack $\theta$ for a fixed body. These data are provided from direct numerical simulations for the $\reynoldsnumber = 165$ case, while the data provided by \citet{Parkinson1964} are used for the $\reynoldsnumber = 22300$ case.
 
-The structure of the paper is as follows. Section \ref{sec:theory} presents the governing equations and the oscillator model used to obtain data, the method for the calculation of the power transferred from the fluid to the structure. The governing parameters namely, the combined mass-stiffness and the combined mass-damping obtained using linearised time scales of the oscillator model are also being introduced. Section \ref{sec:results} presents the results, first of the fixed body tests at a range of $\theta$, then of the response characteristics predicted by the integration of the QSS model for both the high and low \reynoldsnumber\ cases. For the low \reynoldsnumber\ case, the results of the QSS model are compared to those of full direct numerical simulations of the fluid-structure interaction problem. Finally, section \ref{sec:conc} presents the conclusions that can be drawn from this work.
+Here, the modified QSS model developed by \citet{Joly2012} is integrated numerically for low Reynolds numbers. The power transfer from the fluid to the structure and the influence of mechanical parameters was investigated (i.e. mass, stiffness and damping). To this end, a series of previously mentioned mechanical parameters are tested at two different values of \reynoldsnumber: $\reynoldsnumber = 200$, a case that should remain laminar and closer to two-dimensional behaviour; $\reynoldsnumber = 22300$, a case where the flow is expected to be turbulent and three-dimensional. Both cases require the input of transverse force coefficients $C_y$ as a function of angle of attack $\theta$ for a fixed body. These data are provided from direct numerical simulations for the $\reynoldsnumber = 200$ case, while the data provided by \citet{Parkinson1964} are used for the $\reynoldsnumber = 22300$ case.
+
+%The structure of the paper is as follows. Section \ref{sec:theory} presents the governing equations and the oscillator model used to obtain data, the method for the calculation of the power transferred from the fluid to the structure. The governing parameters namely, the combined mass-stiffness and the combined mass-damping obtained using linearised time scales of the oscillator model are also being introduced. Section \ref{sec:results} presents the results, first of the fixed body tests at a range of $\theta$, then of the response characteristics predicted by the integration of the QSS model for both the high and low \reynoldsnumber\ cases. For the low \reynoldsnumber\ case, the results of the QSS model are compared to those of full direct numerical simulations of the fluid-structure interaction problem. Finally, section \ref{sec:conc} presents the conclusions that can be drawn from this work.
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
 \section*{Nomenclature}
 %\textbf{Nomenclature}
@@ -65,14 +66,14 @@ $\massdamp = c^*m^*$ & Combined mass-damping parameter\\
 The equation of motion of the body is given by 
 \begin{equation}
 \label{equationofmotion}
-(m+m_a)\ddot{y}+c\dot{y}+ky=F_y,
+(m)\ddot{y}+c\dot{y}+ky=F_y,
 \end{equation}
 where the forcing term $F_y$ is given by
 \begin{equation}
 \label{lift equation}
 F_y=\frac{1}{2}\rho U^2\mathcal{A}C_y.
 \end{equation}
-\citet{lighthill1986} showed that for systems oscillating in fluid, it is sometimes useful to decompose the fluid forces into components that are in and out of phase with the body acceleration. The component in phase with the acceleration effectively adds to the inertia or effective mass of the system. Therefore, an added mass term, $m_a$, can be added to the system mass. For consistency with previous studies such as \citet{Joly2012}, a value of $m_a=3.5$ has been used here.
+
 
 \input{../figure/sketch-1}
 
@@ -94,7 +95,7 @@ C_y(\theta)=a_1\left(\frac{\dot{y}}{U}\right)+a_3\left(\frac{\dot{y}}{U}\right)^
 m\ddot{y}{+}c\dot{y}{+}ky{=}\frac{1}{2}\rho U^2 \mathcal  {A} \Bigg(a_1\left(\frac{\dot{y}}{U}\right){+}a_3\left(\frac{\dot{y}}{U}\right)^3{+}a_5\left(\frac{\dot{y}}{U}\right)^5{+}a_7\left(\frac{\dot{y}}{U}\right)^7 \Bigg){+} F_0\sin{(\omega_s t)}.
 \end{equation}
 
-This equation can be solved using standard time integration methods. In this study the fourth-order Runge-Kutta scheme built in to the MATLAB routine `ode45' was generally used to obtain the solutions. Some low mass ratio cases used a solver modified for stiff problems, built into the `ode15s' routine in MATLAB.
+This equation can be solved using standard time integration methods. In this study the fourth-order Runge-Kutta scheme built in to the MATLAB routine `ode45' was generally used to obtain the solutions. 
 
 \subsection{Calculation of average power}
 
@@ -112,45 +113,47 @@ P_{mean}=\frac{1}{T}\int_{0}^{T}F_y\dot{y} dt,
 \end{equation}
 where $F_y$ is the transverse (lift) force.
 
-These two definitions show two important interpretions of the power with respect to any energy production device. The first shows that power will be high for situations where the damping coefficient is high, and the transverse velocity is consistently high. The second shows that power will be high for situations where the transverse force and the body velocity are in phase.
+These two definitions show two important interpretations of the power with respect to any energy production device. The first shows that power will be high for situations where the damping coefficient is high, and the transverse velocity is consistently high. The second shows that power will be high for situations where the transverse force and the body velocity are in phase.
  
  \input{../figure/cy_vs_theta}
 
  \input{../figure/coefficient-table}
  
+ \subsection{Validation}
+ \label{ubsec:validation}
+ 
  
  % % % % % % % % % % % % % Time scales % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
- The natural time scales of the system can be found by solving for the eigenvalues of the linearized equation of motion, namely
+ 
+ \section{Results}
+  \label{sec:results}
+ 
+  The natural time scales of the system can be found by solving for the eigenvalues of the linearised equation of motion, namely
  \begin{equation}
  \label{eqn:eom_linear}
- (m+m_a)\ddot{y}{+}c\dot{y}{+}ky{=}\frac{1}{2}\rho U^2 \mathcal{A} a_1\left(\frac{\dot{y}}{U}\right),
+ (m)\ddot{y}{+}c\dot{y}{+}ky{=}\frac{1}{2}\rho U^2 \mathcal{A} a_1\left(\frac{\dot{y}}{U}\right),
  \end{equation}
  which is simply the equation of motion presented in equation \ref{final_equation_motion} with the polynomial series for the lift force truncated at the linear term, and the forcing term representing vortex shedding removed.
  
  Combining the $\dot{y}$ terms and solving for eigenvalues gives
  \begin{equation}
    \label{eqn:eigs}
-   \lambda_{1,2}= -\frac{1}{2}\frac{c-\frac{1}{2}\rho U\mathcal{A}a_1}{(m+m_a)}\pm\frac{1}{2}\sqrt{\left[\frac{c-\frac{1}{2}\rho U\mathcal{A}a_1}{(m+m_a)}\right]^2-4\frac{k}{(m+m_a)}}.
+   \lambda_{1,2}= -\frac{1}{2}\frac{c-\frac{1}{2}\rho U\mathcal{A}a_1}{(m)}\pm\frac{1}{2}\sqrt{\left[\frac{c-\frac{1}{2}\rho U\mathcal{A}a_1}{(m)}\right]^2-4\frac{k}{(m+m_a)}}.
  \end{equation}
  
  If it is assumed that the spring is relatively weak, $k\rightarrow 0$, a single non-zero eigenvalue remains. This eigenvalue is
  \begin{equation}
    \label{eqn:eigs_nospring}
-   \lambda=-\frac{c-\frac{1}{2}\rho U\mathcal{A}a_1}{(m+m_a)}.
+   \lambda=-\frac{c-\frac{1}{2}\rho U\mathcal{A}a_1}{(m)}.
  \end{equation}
  
  Further, if it is assumed that the mechanical damping is significantly weaker than the aerodynamic forces on the body, $c\rightarrow 0$ and
  \begin{equation}
    \label{eqn:eigs_nospring_nodamp}
-   \lambda=\frac{\frac{1}{2}\rho U\mathcal{A}a_1}{(m+m_a)}.
+   \lambda=\frac{\frac{1}{2}\rho U\mathcal{A}a_1}{(m)}.
  \end{equation}
  
- For reasonably heavy bodies, the impact of the added mass can also be neglected, to arrive at a definition of $\lambda$ as
- \begin{equation}
-   \label{eqn:eigs_nospring_nodamp}
-   \lambda=\frac{\frac{1}{2}\rho U\mathcal{A}a_1}{m}.
- \end{equation}
- 
+
  In this form, $\lambda$ represents the inverse time scale of the motion of the body due to the negative damping effect of the long-time aerodynamic forces. In fact, the terms can be regrouped and $\lambda$ written as
  \begin{equation}
    \label{eqn:timescale}
@@ -165,7 +168,7 @@ These two definitions show two important interpretions of the power with respect
    \ddot{Y} + \frac{m^{*2}}{a_1^2}\frac{kD^2}{mU^2}Y = \left(\frac{1}{2} - \frac{m^*}{a_1}\frac{cD}{mU}\right)\dot{Y} + H.O.T.,
  \end{equation}
  
- where $H.O.T.$ respresents the higher order terms in $\dot{Y}$. The coefficients can be regrouped into combinations of non-dimensional groups, and rewritten as
+ where $H.O.T.$ represents the higher order terms in $\dot{Y}$. The coefficients can be regrouped into combinations of non-dimensional groups, and rewritten as
  \begin{equation}
    \label{eqn:eom_nondim_regroup}
    \ddot{Y} + \frac{4\pi^{2}m^{*2}}{U^{*2}a_1^2}Y = \left(\frac{1}{2} - \frac{c^*m^*}{a_1}\right)\dot{Y} + H.O.T,
@@ -173,20 +176,42 @@ These two definitions show two important interpretions of the power with respect
  
  where $c^*=cD/mU$ is a non-dimensional damping parameter.
  
- Equation \ref{eqn:eom_nondim_regroup} shows there are four non-dimensional parameters that play a role in setting the response of the system. These are the stiffness (represented by the reduced velocity $U^*$), the damping $c^*$, the mass ratio $m^*$, and the geometry, represented by the rate of change in the aerodynamic force with respect to angle of attack when the body is at the equilibrium position, $a_1$. The grouping of these parameters into two groups in equation \ref{eqn:eom_nondim_regroup} which arise by non-dimensionalising using the natural time scale of the galloping system, suggests there are two groups that dictate the response: $\Gamma_1 = 4\pi^2m^{*2}/U^{*2}a_1^2$ and $\Gamma_2 = c^*m^*/a_1$. For a given geometry and Reynolds number, $\Gamma_1$ can be thought of as a combined mass-stiffness, whereas $\Gamma_2$ can be thought of a a combined mass-damping parameter. As it is assumed that during galloping the stiffnes plays only a minor role, $\Gamma_2$ seems a likely parameter to collapse the data presented in figure \ref{fig:uncollapsed_data}. In fact, in the classic paper on galloping from \citet{Parkinson1964}, galloping data from wind tunnel tests is presented in terms of a parameter that can be shown to be the same as $\Gamma_2$.
+ Equation \ref{eqn:eom_nondim_regroup} shows there are four non-dimensional parameters that play a role in setting the response of the system. These are the stiffness (represented by the reduced velocity $U^*$), the damping $c^*$, the mass ratio $m^*$, and the geometry, represented by the rate of change in the aerodynamic force with respect to angle of attack when the body is at the equilibrium position, $a_1$. The grouping of these parameters into two groups in equation \ref{eqn:eom_nondim_regroup} which arise by non-dimensionalising using the natural time scale of the galloping system, suggests there are two groups that dictate the response: $\Gamma_1 = 4\pi^2m^{*2}/U^{*2}a_1^2$ and $\Gamma_2 = c^*m^*/a_1$. For a given geometry and Reynolds number, $\Gamma_1$ can be thought of as a combined mass-stiffness, whereas $\Gamma_2$ can be thought of a a combined mass-damping parameter. As it is assumed that during galloping the stiffness plays only a minor role, $\Gamma_2$ seems a likely parameter to collapse the data presented in figure \ref{fig:uncollapsed_data}. In fact, in the classic paper on galloping from \citet{Parkinson1964}, galloping data from wind tunnel tests is presented in terms of a parameter that can be shown to be the same as $\Gamma_2$.
  
  All of the quantities that make up $\Gamma_1$ and $\Gamma_2$ can, in theory, be known before an experiment is conducted. However, the quantity $a_1$ is a relatively difficult one to determine, requiring static body experiments or simulations. Here, the geometry is unchanged and results are only being compared at the same \reynoldsnumber. Hence, suitable parameters can be formed by multiplying $\Gamma_1$ and $\Gamma_2$ by $a_1^2$ and $a_1$ respectively, to arrive at a mass-stiffness parameter $\massstiff =  4\pi^2m^{*2}/U^{*2}$, and a mass-damping parameter defined as $\massdamp = c^*m^*$.
  
  % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
- \section{Results}
- \label{sec:results}
+  
+ The range of incident flow angles where $C_y$ remains positive is narrow at $\reynoldsnumber=200$ ($0^\circ <\theta \leq$ $7^\circ$) compared to $\reynoldsnumber=22300$ ($0^\circ <\theta \leq 15^\circ$). This feature is what sustains galloping. Power is only transferred from the fluid to the supporting structure within this range of incident angles because fluid forces are acting in the direction of travel of the oscillating body, as demonstrated by equation \ref{power_alt}. Incident angles beyond this range actually suppress the galloping and power goes in the opposite direction, i.e; from body to fluid. Therefore due to the overall smaller $C_y$ and narrow range of angles where $C_y$ is positive for $\reynoldsnumber=200$ compared to $\reynoldsnumber=22300$, it is expected that the transferred power at $\reynoldsnumber=200$ is significantly lower than at $\reynoldsnumber=22300$.
  
+
  \input{../figure/uncollapsed_data}
- \input{../figure/collapsed_data}
+  \input{../figure/collapsed_data}
+ \subsection{Displacement, velocity and power}
  
-  \input{../figure/m_star_collapsed}
-  \input{../figure/mstar_parkinson} 
+ A similar result to \cite{Barrero-Gil2010a} could be observed in figure \ref{fig:uncollapsed_data} (f)  where the peak power remains the same but the \ustar which corresponds to the peak power shifts to the right as the damping ratio is increased. comparing Figures \ref{fig:uncollapsed_data} and \ref{fig:collapsed_data} it is evident that the velocity and mean power data are well collapsed when represented by \massdamp derived using natural time scales earlier in this article compared to the conventional VIV parameters. Thus reinforcing the fact that unlike in VIV power transfer is not bounded by a resonant range of frequencies. 
  
+ 
+\subparagraph{limitation of the quasi-steady hypothesis at low Reynolds numbers}
+
+Work done by \cite{Joly2012} has also been focused on the displacement of a body under galloping at low Reynolds numbers as well as at zero or minimal damping. Therefore studies were carried out analyse the behaviour of the velocity as the damping is increased. The quasi-steady results were compared with the DNS results. From the comparison it was found out that the discrepancy of the power output is quite high as \massdamp is increased.  
+
+
+
+ 
+ \input{../figure/spectrum_pi_1_10}
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+  
  
  
  

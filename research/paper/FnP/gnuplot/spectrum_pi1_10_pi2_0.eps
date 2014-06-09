@@ -1,11 +1,9 @@
-%!PS-Adobe-2.0
-%%Title: timehist_disp.eps
-%%Creator: gnuplot 4.6 patchlevel 0
-%%CreationDate: Thu Jul 25 17:12:58 2013
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: spectrum_pi1_10_pi2_0.eps
+%%Creator: gnuplot 4.6 patchlevel 3
+%%CreationDate: Mon Jun  9 18:30:22 2014
 %%DocumentFonts: (atend)
 %%BoundingBox: 50 50 390 220
-%%Orientation: Portrait
-%%Pages: (atend)
 %%EndComments
 %%BeginProlog
 /gnudict 256 dict def
@@ -29,7 +27,7 @@ gnudict begin
 /Gamma 1.0 def
 /BackgroundColor {-1.000 -1.000 -1.000} def
 %
-/vshift -33 def
+/vshift -66 def
 /dl1 {
   10.0 Dashlength mul mul
   Rounded { currentlinewidth 0.75 mul sub dup 0 le { pop 0.01 } if } if
@@ -49,7 +47,7 @@ gnudict begin
   } if
 } def
 %
-% Gnuplot Prolog Version 4.4 (August 2010)
+% Gnuplot Prolog Version 4.6 (September 2012)
 %
 %/SuppressPDFMark true def
 %
@@ -316,7 +314,8 @@ gnudict begin
 /PatternFill {gsave /PFa [ 9 2 roll ] def
   PFa 0 get PFa 2 get 2 div add PFa 1 get PFa 3 get 2 div add translate
   PFa 2 get -2 div PFa 3 get -2 div PFa 2 get PFa 3 get Rec
-  gsave 1 setgray fill grestore clip
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+  clip
   currentlinewidth 0.5 mul setlinewidth
   /PFs PFa 2 get dup mul PFa 3 get dup mul add sqrt def
   0 0 M PFa 5 get rotate PFs -2 div dup translate
@@ -456,13 +455,13 @@ systemdict /pdfmark known not {
   userdict /pdfmark systemdict /cleartomark get put
 } if
 SDict begin [
-  /Title (timehist_disp.eps)
+  /Title (spectrum_pi1_10_pi2_0.eps)
   /Subject (gnuplot plot)
-  /Creator (gnuplot 4.6 patchlevel 0)
+  /Creator (gnuplot 4.6 patchlevel 3)
   /Author (hgjay)
 %  /Producer (gnuplot)
 %  /Keywords ()
-  /CreationDate (Thu Jul 25 17:12:58 2013)
+  /CreationDate (Mon Jun  9 18:30:22 2014)
   /DOCINFO pdfmark
 end
 } ifelse
@@ -473,155 +472,477 @@ gnudict begin
 gsave
 doclip
 50 50 translate
-0.100 0.100 scale
+0.050 0.050 scale
 0 setgray
 newpath
-(Times-Roman) findfont 100 scalefont setfont
-BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {gsave BackgroundColor C clippath fill grestore} if
+(Times-roman) findfont 200 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {BackgroundColor C 1.000 0 0 6802.00 3400.00 BoxColFill} if
 1.000 UL
 LTb
-450 660 M
+660 400 M
 63 0 V
-2707 0 R
--63 0 V
-stroke
-390 660 M
-[ [(Times-Roman) 100.0 0.0 true true 0 ( 0.05)]
-] -33.3 MRshow
-1.000 UL
-LTb
-450 1119 M
+660 860 M
 63 0 V
-2707 0 R
--63 0 V
 stroke
-390 1119 M
-[ [(Times-Roman) 100.0 0.0 true true 0 ( 0.1)]
-] -33.3 MRshow
+540 860 M
+[ [(Times-roman) 200.0 0.0 true true 0 (0.2)]
+] -66.7 MRshow
 1.000 UL
 LTb
-450 1579 M
+660 1320 M
 63 0 V
-2707 0 R
--63 0 V
 stroke
-390 1579 M
-[ [(Times-Roman) 100.0 0.0 true true 0 ( 0.15)]
-] -33.3 MRshow
+540 1320 M
+[ [(Times-roman) 200.0 0.0 true true 0 (0.4)]
+] -66.7 MRshow
 1.000 UL
 LTb
-954 200 M
+660 1780 M
+63 0 V
+stroke
+540 1780 M
+[ [(Times-roman) 200.0 0.0 true true 0 (0.6)]
+] -66.7 MRshow
+1.000 UL
+LTb
+660 2239 M
+63 0 V
+stroke
+540 2239 M
+[ [(Times-roman) 200.0 0.0 true true 0 (0.8)]
+] -66.7 MRshow
+1.000 UL
+LTb
+660 2699 M
+63 0 V
+stroke
+540 2699 M
+[ [(Times-roman) 200.0 0.0 true true 0 (1.0)]
+] -66.7 MRshow
+1.000 UL
+LTb
+660 3159 M
+63 0 V
+stroke
+540 3159 M
+[ [(Times-roman) 200.0 0.0 true true 0 (1.2)]
+] -66.7 MRshow
+1.000 UL
+LTb
+660 400 M
 0 63 V
-0 1316 R
-0 -63 V
 stroke
-954 100 M
-[ [(Times-Roman) 100.0 0.0 true true 0 ( 40)]
-] -33.3 MCshow
+660 200 M
+[ [(Times-roman) 200.0 0.0 true true 0 ( )]
+] -66.7 MCshow
 1.000 UL
 LTb
-1457 200 M
+1816 400 M
 0 63 V
-0 1316 R
-0 -63 V
 stroke
-1457 100 M
-[ [(Times-Roman) 100.0 0.0 true true 0 ( 60)]
-] -33.3 MCshow
+1816 200 M
+[ [(Times-roman) 200.0 0.0 true true 0 ( )]
+] -66.7 MCshow
 1.000 UL
 LTb
-1961 200 M
+2972 400 M
 0 63 V
-0 1316 R
-0 -63 V
 stroke
-1961 100 M
-[ [(Times-Roman) 100.0 0.0 true true 0 ( 80)]
-] -33.3 MCshow
+2972 200 M
+[ [(Times-roman) 200.0 0.0 true true 0 ( )]
+] -66.7 MCshow
 1.000 UL
 LTb
-2465 200 M
+4129 400 M
 0 63 V
-0 1316 R
-0 -63 V
 stroke
-2465 100 M
-[ [(Times-Roman) 100.0 0.0 true true 0 ( 100)]
-] -33.3 MCshow
+4129 200 M
+[ [(Times-roman) 200.0 0.0 true true 0 ( )]
+] -66.7 MCshow
 1.000 UL
 LTb
-2968 200 M
+5285 400 M
 0 63 V
-0 1316 R
-0 -63 V
 stroke
-2968 100 M
-[ [(Times-Roman) 100.0 0.0 true true 0 ( 120)]
-] -33.3 MCshow
+5285 200 M
+[ [(Times-roman) 200.0 0.0 true true 0 ( )]
+] -66.7 MCshow
+1.000 UL
+LTb
+6441 400 M
+0 63 V
+stroke
+6441 200 M
+[ [(Times-roman) 200.0 0.0 true true 0 ( )]
+] -66.7 MCshow
 1.000 UL
 LTb
 1.000 UL
 LTb
-450 1579 N
-450 200 L
-2770 0 V
-0 1379 V
--2770 0 V
+660 3159 N
+660 400 L
+5781 0 V
+0 2759 V
+-5781 0 V
 Z stroke
 1.000 UP
+631 3242 M
+[ [(Times-roman) 200.0 0.0 true true 0 (x 10)]
+[(Times-roman) 160.0 100.0 true true 0 (-1)]
+] -86.7 MLshow
 1.000 UL
 LTb
 % Begin plot #1
-1.000 UP
 1.000 UL
 LT0
-/Times-Roman findfont 100 scalefont setfont
-828 764 Star
-1080 1010 Star
-1331 1136 Star
-1583 1209 Star
-1835 1262 Star
-2087 1301 Star
-2339 1333 Star
-2590 1364 Star
-2842 1378 Star
-3094 1398 Star
+/Times-roman findfont 200 scalefont setfont
+/vshift -66 def
+660 425 M
+17 0 V
+18 1 V
+17 0 V
+17 0 V
+17 0 V
+18 0 V
+17 0 V
+17 1 V
+17 0 V
+18 0 V
+17 1 V
+17 0 V
+17 1 V
+18 1 V
+17 0 V
+17 1 V
+17 1 V
+18 1 V
+17 1 V
+17 1 V
+17 2 V
+18 1 V
+17 2 V
+17 1 V
+17 4 V
+18 4 V
+17 2 V
+17 -1 V
+17 4 V
+18 19 V
+17 14 V
+17 -12 V
+18 -32 V
+17 85 V
+17 98 V
+17 69 V
+18 -58 V
+17 -117 V
+17 2441 V
+17 -967 V
+1368 923 L
+17 -394 V
+17 -22 V
+17 60 V
+18 -54 V
+17 -34 V
+17 -30 V
+17 9 V
+18 3 V
+17 -12 V
+17 -7 V
+17 -4 V
+18 0 V
+17 -2 V
+17 -4 V
+17 -2 V
+18 -2 V
+17 -1 V
+17 -2 V
+18 -1 V
+17 -2 V
+17 -1 V
+17 0 V
+18 -1 V
+17 -1 V
+17 -1 V
+17 0 V
+18 -1 V
+17 -1 V
+17 0 V
+17 -1 V
+18 0 V
+17 -1 V
+17 0 V
+17 -1 V
+18 0 V
+17 0 V
+17 -1 V
+17 0 V
+18 0 V
+17 -1 V
+17 0 V
+17 0 V
+18 0 V
+17 -1 V
+17 0 V
+17 0 V
+18 0 V
+17 0 V
+17 0 V
+18 0 V
+17 0 V
+17 -1 V
+17 0 V
+18 0 V
+17 0 V
+17 0 V
+17 0 V
+18 -1 V
+17 0 V
+17 0 V
+17 0 V
+18 0 V
+17 0 V
+17 0 V
+17 0 V
+18 3 V
+17 -3 V
+17 1 V
+17 0 V
+18 0 V
+17 12 V
+17 -4 V
+18 -13 V
+17 11 V
+17 10 V
+17 7 V
+18 52 V
+17 -70 V
+17 -4 V
+17 -5 V
+18 -1 V
+17 -2 V
+17 0 V
+17 0 V
+18 1 V
+17 0 V
+17 0 V
+17 0 V
+18 0 V
+17 0 V
+17 1 V
+17 0 V
+18 0 V
+17 0 V
+17 0 V
+17 0 V
+18 0 V
+17 0 V
+17 0 V
+17 0 V
+18 0 V
+17 0 V
+17 0 V
+18 -1 V
+stroke 3163 403 M
+17 0 V
+17 0 V
+17 0 V
+18 0 V
+17 0 V
+17 0 V
+17 0 V
+18 0 V
+17 1 V
+17 0 V
+17 0 V
+18 0 V
+17 0 V
+17 0 V
+17 0 V
+18 0 V
+17 0 V
+17 -1 V
+17 0 V
+18 0 V
+17 0 V
+17 0 V
+17 0 V
+18 0 V
+17 0 V
+17 0 V
+18 0 V
+17 0 V
+17 0 V
+17 0 V
+18 0 V
+17 0 V
+17 1 V
+17 -1 V
+18 0 V
+17 0 V
+17 1 V
+17 0 V
+18 -1 V
+17 -1 V
+17 1 V
+17 2 V
+18 3 V
+17 1 V
+17 -3 V
+17 54 V
+18 -39 V
+17 -8 V
+17 -5 V
+17 -4 V
+18 1 V
+17 9 V
+17 -8 V
+17 -1 V
+18 0 V
+17 0 V
+17 -1 V
+18 0 V
+17 0 V
+17 0 V
+17 0 V
+18 -1 V
+17 0 V
+17 0 V
+17 0 V
+18 0 V
+17 1 V
+17 0 V
+17 0 V
+18 0 V
+17 0 V
+17 0 V
+17 0 V
+18 0 V
+17 0 V
+17 0 V
+17 0 V
+18 -1 V
+17 0 V
+17 0 V
+17 0 V
+18 0 V
+17 1 V
+17 0 V
+18 0 V
+17 0 V
+17 0 V
+17 0 V
+18 0 V
+17 0 V
+17 0 V
+17 0 V
+18 0 V
+17 0 V
+17 0 V
+17 0 V
+17 0 V
+18 1 V
+17 0 V
+18 1 V
+17 0 V
+17 0 V
+17 0 V
+17 0 V
+stroke 4957 406 M
+18 -1 V
+17 0 V
+17 -1 V
+17 -1 V
+18 0 V
+17 1 V
+17 2 V
+17 3 V
+18 3 V
+17 0 V
+17 4 V
+18 3 V
+17 8 V
+17 10 V
+17 23 V
+18 -30 V
+17 11 V
+17 29 V
+17 49 V
+18 104 V
+17 72 V
+17 -278 V
+17 19 V
+18 -7 V
+17 -11 V
+17 -9 V
+18 14 V
+17 -7 V
+17 -4 V
+17 -3 V
+17 -1 V
+18 -2 V
+17 -1 V
+17 -2 V
+17 -1 V
+18 -1 V
+17 0 V
+17 1 V
+18 0 V
+17 1 V
+17 0 V
+17 0 V
+18 0 V
+17 0 V
+17 -1 V
+17 0 V
+18 0 V
+17 0 V
+17 -1 V
+17 0 V
+18 0 V
+17 -1 V
+17 0 V
+17 0 V
+18 1 V
+17 0 V
+17 0 V
+18 0 V
+17 0 V
+17 0 V
+17 0 V
+17 0 V
+18 0 V
+17 0 V
+17 0 V
+17 -1 V
+18 0 V
+17 0 V
+17 0 V
+18 0 V
+17 0 V
+17 0 V
+17 0 V
+18 0 V
+17 0 V
+17 1 V
+17 0 V
+18 0 V
+17 0 V
+17 0 V
+17 0 V
+18 0 V
+17 0 V
+17 0 V
+18 0 V
+16 0 V
 % End plot #1
-% Begin plot #2
-1.000 UP
-1.000 UL
-LT1
-/Times-Roman findfont 100 scalefont setfont
-1080 716 TriDF
-1331 947 TriDF
-1583 1068 TriDF
-1835 1147 TriDF
-2087 1203 TriDF
-2339 1234 TriDF
-2590 1281 TriDF
-2842 1309 TriDF
-3094 1331 TriDF
-% End plot #2
-% Begin plot #3
-1.000 UP
-1.000 UL
-LT2
-/Times-Roman findfont 100 scalefont setfont
-1583 638 CircleF
-1835 855 CircleF
-2087 968 CircleF
-2339 1052 CircleF
-2590 1109 CircleF
-2842 1156 CircleF
-3094 1197 CircleF
-% End plot #3
-1.000 UL
+stroke
 LTb
-450 1579 N
-450 200 L
-2770 0 V
-0 1379 V
--2770 0 V
+660 3159 N
+660 400 L
+5781 0 V
+0 2759 V
+-5781 0 V
 Z stroke
 1.000 UP
 1.000 UL
@@ -631,5 +952,4 @@ grestore
 end
 showpage
 %%Trailer
-%%DocumentFonts: Times-Roman
-%%Pages: 1
+%%DocumentFonts: Times-roman
