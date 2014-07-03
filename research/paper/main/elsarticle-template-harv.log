@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2014.6.18)  3 JUL 2014 12:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2014.6.18)  3 JUL 2014 13:09
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -320,10 +320,14 @@ Package natbib Warning: Citation `Joly2012' on page 5 undefined on input line 9
 1.
 
 [5]
-Overfull \hbox (21.498pt too wide) detected at line 96
-\OML/cmm/m/it/12 m[][]c[][]ky[][]^^ZU[]\OMS/cmsy/m/n/12 A[]\OML/cmm/m/it/12 a[]
- [] []a[] [][] []a[] [][] []a[] [][] [][]F[] [] []:
- []
+! Extra }, or forgotten $.
+l.97 ...)^5{+}a_7\left(\frac{\dot{y}}{U}\right)^7}
+                                                  .
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
 (../figure/cy_vs_theta.tex
 File: ../FnP/gnuplot/lift_curve_200.eps Graphic file (type eps)
@@ -339,12 +343,12 @@ ine 19.
 Package natbib Warning: Citation `Parkinson1964' on page 6 undefined on input l
 ine 19.
 
-[6]) (../figure/coefficient-table.tex) [7] [8]
+) (../figure/coefficient-table.tex) [6] [7] [8]
 
 Package natbib Warning: Citation `Parkinson1964' on page 9 undefined on input l
-ine 179.
+ine 181.
 
-[9] (../figure/uncollapsed_data.tex
+(../figure/uncollapsed_data.tex
 File: ../FnP/gnuplot/displacement_amp_re_parkinson_1.eps Graphic file (type eps
 )
 
@@ -364,12 +368,12 @@ File: ../FnP/gnuplot/velocity_amp_re165.eps Graphic file (type eps)
 File: ../FnP/gnuplot/mean_power_re_165.eps Graphic file (type eps)
  <../FnP/gnuplot/mean_power_re_165.eps>
 
-Package natbib Warning: Citation `Parkinson1964' on page 10 undefined on input 
-line 40.
+Package natbib Warning: Citation `Parkinson1964' on page 9 undefined on input l
+ine 40.
 
 
-Package natbib Warning: Citation `Parkinson1964' on page 10 undefined on input 
-line 40.
+Package natbib Warning: Citation `Parkinson1964' on page 9 undefined on input l
+ine 40.
 
 ) (../figure/collapsed_data.tex
 File: ../FnP/gnuplot/displacement_amp_collapsed_parkinson.eps Graphic file (typ
@@ -395,22 +399,26 @@ s)
 
 <../FnP/gnuplot/displacement_amp_collpased_re165.eps>
 
-Package natbib Warning: Citation `Parkinson1964' on page 10 undefined on input 
-line 35.
+Package natbib Warning: Citation `Parkinson1964' on page 9 undefined on input l
+ine 35.
 
 
-Package natbib Warning: Citation `Parkinson1964' on page 10 undefined on input 
-line 35.
+Package natbib Warning: Citation `Parkinson1964' on page 9 undefined on input l
+ine 35.
 
 )
 
-Package natbib Warning: Citation `Barrero-Gil2010a' on page 10 undefined on inp
-ut line 193.
+Package natbib Warning: Citation `Barrero-Gil2010a' on page 9 undefined on inpu
+t line 195.
 
-[10] [11] (../figure/spectrum_pi_1_10.tex
+[9] [10] [11]
+
+Package natbib Warning: Citation `Joly2012' on page 12 undefined on input line 
+206.
+
+(../figure/spectrum_pi_1_10.tex
 File: ../FnP/gnuplot/spectrum_pi1_10_pi2_0.eps Graphic file (type eps)
-
-<../FnP/gnuplot/spectrum_pi1_10_pi2_0.eps>
+ <../FnP/gnuplot/spectrum_pi1_10_pi2_0.eps>
 File: ../FnP/gnuplot/spectrum_pi1_10_pi2_0_3.eps Graphic file (type eps)
 
 <../FnP/gnuplot/spectrum_pi1_10_pi2_0_3.eps>
@@ -424,18 +432,39 @@ Overfull \hbox (14.63324pt too wide) in paragraph at lines 23--24
 [][][] 
  []
 
-)) [12] [13] (./elsarticle-template-harv.bbl)
+) (../figure/power_data.tex
+File: ../FnP/gnuplot/mean_power_re_parkinson.eps Graphic file (type eps)
+ <../FnP/gnuplot/mean_power_re_parkinson.eps>
+File: ../FnP/gnuplot/mean_power_re_165.eps Graphic file (type eps)
+
+<../FnP/gnuplot/mean_power_re_165.eps>
+File: ../FnP/gnuplot/mean_power_collapsed_parkinson.eps Graphic file (type eps)
+
+
+<../FnP/gnuplot/mean_power_collapsed_parkinson.eps>
+File: ../FnP/gnuplot/mean_power_collapsed_re_165.eps Graphic file (type eps)
+
+<../FnP/gnuplot/mean_power_collapsed_re_165.eps>
+Overfull \hbox (14.63324pt too wide) in paragraph at lines 23--24
+[][][] 
+ []
+
+)) [12] [13] [14] (./elsarticle-template-harv.bbl)
 
 Package natbib Warning: There were undefined citations.
 
-(./elsarticle-template-harv.aux) ) 
+(./elsarticle-template-harv.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2775 strings out of 495029
- 36595 string characters out of 6181523
+ 2779 strings out of 495029
+ 36669 string characters out of 6181523
  93282 words of memory out of 5000000
- 5890 multiletter control sequences out of 15000+600000
+ 5891 multiletter control sequences out of 15000+600000
  15734 words of font info for 60 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  42i,10n,34p,1342b,303s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on elsarticle-template-harv.dvi (13 pages, 39008 bytes).
+Output written on elsarticle-template-harv.dvi (14 pages, 41568 bytes).

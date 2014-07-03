@@ -2,7 +2,11 @@ This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: elsarticle-template-harv.aux
 I couldn't open style file elsarticle-harv.bst
+<<<<<<< HEAD
 ---line 59 of file elsarticle-template-harv.aux
+=======
+---line 62 of file elsarticle-template-harv.aux
+>>>>>>> 20a5872d811ece04dfbfe9d79b1974ea5cd82ec0
  : \bibstyle{elsarticle-harv
  :                          }
 I'm skipping whatever remains of this command
