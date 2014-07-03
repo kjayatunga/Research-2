@@ -88,12 +88,14 @@ C_y(\theta)=a_1\left(\frac{\dot{y}}{U}\right)+a_3\left(\frac{\dot{y}}{U}\right)^
 %\ddot{y}+c^*\dot{y}+k^*y=\frac{1}{2}\rho U^2A
 %\end{equation}
 
- It is expected that vortex shedding will be well correlated along the span and provide significant forcing at low \reynoldsnumber. \citet{Joly2012} introduced  an additional sinusoidal forcing function to the hydrodynamic forcing to model this. This enables the model to provide accurate predictions even at low mass ratios where galloping excitation is suppressed or not present. In this study, the forcing due to vortex shedding in low \reynoldsnumber\ cases is incorporated using a sinusoidal forcing function $F_0\sin{\omega_{s}t}$ added to the right-hand side of equation \ref{equationofmotion}. Here, $\omega_{s}$ and $F_0$ represent the angular vortex shedding frequency and the maximum force due to shedding respectively. Thus, the final equation for the modified QSS model is
-
+ It is expected that vortex shedding will be well correlated along the span and provide significant forcing at low \reynoldsnumber. \citet{Joly2012} introduced  an additional sinusoidal forcing function to the hydrodynamic forcing to model this. This enables the model to provide accurate predictions even at low mass ratios where galloping excitation is suppressed or not present. However, in this study we also focus on isolating the regions where the QSS model predicts well and therefore the additional sinusoidal forcing function is disregarded.  
+ 
+ 
+ 
 \begin{equation}
 \label{final_equation_motion}
-m\ddot{y}{+}c\dot{y}{+}ky{=}\frac{1}{2}\rho U^2 \mathcal  {A} \Bigg(a_1\left(\frac{\dot{y}}{U}\right){+}a_3\left(\frac{\dot{y}}{U}\right)^3{+}a_5\left(\frac{\dot{y}}{U}\right)^5{+}a_7\left(\frac{\dot{y}}{U}\right)^7 \Bigg){+} F_0\sin{(\omega_s t)}.
-\end{equation}
+m\ddot{y}{+}c\dot{y}{+}ky{=}\frac{1}{2}\rho U^2 \mathcal  {A} \Bigg(a_1\left(\frac{\dot{y}}{U}\right){+}a_3\left(\frac{\dot{y}}{U}\right)^3{+}a_5\left(\frac{\dot{y}}{U}\right)^5{+}a_7\left(\frac{\dot{y}}{U}\right)^7}.
+\end{equation}%
 
 This equation can be solved using standard time integration methods. In this study the fourth-order Runge-Kutta scheme built in to the MATLAB routine `ode45' was generally used to obtain the solutions. 
 
@@ -192,15 +194,14 @@ These two definitions show two important interpretations of the power with respe
  A similar result to \cite{Barrero-Gil2010a} could be observed in figure \ref{fig:uncollapsed_data} (f)  where the peak power remains the same but the \ustar which corresponds to the peak power shifts to the right as the damping ratio is increased. comparing Figures \ref{fig:uncollapsed_data} and \ref{fig:collapsed_data} it is evident that the velocity and mean power data are well collapsed when represented by \massdamp derived using natural time scales earlier in this article compared to the conventional VIV parameters. Thus reinforcing the fact that unlike in VIV power transfer is not bounded by a resonant range of frequencies. 
  
  
-\subparagraph{limitation of the quasi-steady hypothesis at low Reynolds numbers}
+\subsection{limitations of the quasi-steady hypothesis at low Reynolds numbers}
 
-Work done by \cite{Joly2012} has also been focused on the displacement of a body under galloping at low Reynolds numbers as well as at zero or minimal damping. Therefore studies were carried out analyse the behaviour of the velocity as the damping is increased. The quasi-steady results were compared with the DNS results. From the comparison it was found out that the discrepancy of the power output is quite high as \massdamp is increased.  
-
+\cite{Joly2012} showed that the displacement data obtained using the QSS assumption and DNS agree well at low Reynolds numbers, with the modification implemented to the oscillator equation which accounts for the vortex shedding. These data were obtained at zero damping levels. Since the current study was focused on the power transfer, more focus was put on analyzing he behaviour od the velocity as the damping is increased. The comparison between the QSS and the DNS results revealed that the discrepancy of the power data  increases significantly as \massdamp \ is increased. From figure \ref{fig:spectrum_pi1_10} (powers spectrum analysis done on the DNS results) it is evident that the relative strength of the galloping signal decreases as the \massdamp \ is increased from $ 0 \rightarrow 0.7$. Therefore the influence of the vortex shedding becomes more significant and the interactions between galloping and shedding become more complex as the damping is increased. 
 
 
  
  \input{../figure/spectrum_pi_1_10}
- 
+ \input{../figure/power_data}
  
 
  

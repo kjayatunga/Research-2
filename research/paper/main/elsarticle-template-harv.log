@@ -1,7 +1,6 @@
-This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=latex 2014.2.11)  9 JUN 2014 22:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.6.18)  1 JUL 2014 14:39
 entering extended mode
  restricted \write18 enabled.
- Source specials enabled.
  %&-line parsing enabled.
 **elsarticle-template-harv.tex
 (./elsarticle-template-harv.tex
@@ -43,10 +42,18 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: dvips.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvips.def
-File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
 ))
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
@@ -63,13 +70,13 @@ LaTeX Font Info:    Try loading font information for U+psy on input line 64.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
-\c@tnote=\count87
-\c@fnote=\count88
-\c@cnote=\count89
-\c@ead=\count90
-\c@author=\count91
+\c@tnote=\count88
+\c@fnote=\count89
+\c@cnote=\count90
+\c@ead=\count91
+\c@author=\count92
 \@eadauthor=\toks15
-\c@affn=\count92
+\c@affn=\count93
 \absbox=\box26
 \keybox=\box27
 \Columnwidth=\dimen106
@@ -87,7 +94,7 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip45
 \bibsep=\skip46
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count93
+\c@NAT@ctr=\count94
 )
 \splwrite=\write3
 \openout3 = `elsarticle-template-harv.spl'.
@@ -100,18 +107,12 @@ Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)))
+))
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 
@@ -136,17 +137,23 @@ Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is not detected.
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
+Package pdftexcmds Info: \pdfdraftmode found.
 )
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
 
-Package epstopdf Warning: Drivers other than `pdftex.def' are not supported.
-
-)) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
@@ -177,13 +184,13 @@ Package: amsbsy 1999/11/29 v1.2d
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count94
+\inf@bad=\count95
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count95
-\leftroot@=\count96
+\uproot@=\count96
+\leftroot@=\count97
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count97
-\DOTSCASE@=\count98
+\classnum@=\count98
+\DOTSCASE@=\count99
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
@@ -192,15 +199,15 @@ LaTeX Info: Redefining \cdots on input line 466.
 \big@size=\dimen112
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count99
-\c@MaxMatrixCols=\count100
+\macc@depth=\count100
+\c@MaxMatrixCols=\count101
 \dotsspace@=\muskip10
-\c@parentequation=\count101
-\dspbrk@lvl=\count102
+\c@parentequation=\count102
+\dspbrk@lvl=\count103
 \tag@help=\toks19
-\row@=\count103
-\column@=\count104
-\maxfields@=\count105
+\row@=\count104
+\column@=\count105
+\maxfields@=\count106
 \andhelp@=\toks20
 \eqnshift@=\dimen113
 \alignsep@=\dimen114
@@ -215,23 +222,14 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/a4wide/a4wide.sty
-Package: a4wide 1994/08/30
-
-(/usr/share/texlive/texmf-dist/tex/latex/ntgclass/a4.sty
-Package: a4 2004/04/15 v1.2g A4 based page layout
-))
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: dvips.def on input line 130.
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
-File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
-))
+Package color Info: Driver file: pdftex.def on input line 130.
+)
 (./elsarticle-template-harv.aux)
 \openout1 = `elsarticle-template-harv.aux'.
 
@@ -247,20 +245,33 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 102.
 LaTeX Font Info:    ... okay on input line 102.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 102.
 LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Try loading font information for U+msa on input line 138.
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count107
+\scratchdimen=\dimen119
+\scratchbox=\box32
+\nofMPsegments=\count108
+\nofMParguments=\count109
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count110
+\MPscratchDim=\dimen120
+\MPnumerator=\count111
+\makeMPintoPDFobject=\count112
+\everyMPtoPDFconversion=\toks24
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 138.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 138.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./article.tex
-[1
+) [1
 
 
-]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./article.tex
 
 Package natbib Warning: Citation `Paidoussis2010' on page 2 undefined on input 
 line 5.
@@ -289,153 +300,811 @@ ine 7.
 Package natbib Warning: Citation `Barrero-Gil2010a' on page 2 undefined on inpu
 t line 7.
 
+[2]
 
-Package natbib Warning: Citation `Joly2012' on page 2 undefined on input line 1
+Package natbib Warning: Citation `Joly2012' on page 3 undefined on input line 1
 0.
 
 
-Package natbib Warning: Citation `Parkinson1964' on page 2 undefined on input l
+Package natbib Warning: Citation `Parkinson1964' on page 3 undefined on input l
 ine 10.
 
 
-Overfull \hbox (153.7917pt too wide) in paragraph at lines 17--57
-[][][] 
+Overfull \hbox (224.51294pt too wide) in paragraph at lines 17--57
+[][] 
  []
 
-[2] [3] (../figure/sketch-1.tex
-File: ../FnP/gnuplot/setup-1.eps Graphic file (type eps)
- <../FnP/gnuplot/setup-1.eps>)
+[3]
+Overfull \vbox (18.26488pt too high) has occurred while \output is active []
 
-Package natbib Warning: Citation `Parkinson1964' on page 4 undefined on input l
+
+[4] (../figure/sketch-1.tex
+Package epstopdf Info: Source file: <../FnP/gnuplot/setup-1.eps>
+(epstopdf)                    date: 2014-05-12 16:36:30
+(epstopdf)                    size: 3745 bytes
+(epstopdf)             Output file: <../FnP/gnuplot/setup-1-eps-converted-to.pd
+f>
+(epstopdf)             Command: <repstopdf --outfile=../FnP/gnuplot/setup-1-eps
+-converted-to.pdf ../FnP/gnuplot/setup-1.eps>
+(epstopdf)             \includegraphics on input line 6.
+runsystem(repstopdf --outfile=../FnP/gnuplot/setup-1-eps-converted-to.pdf ../Fn
+P/gnuplot/setup-1.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <../FnP/gnuplot/setup-1-eps-converted-to.pd
+f>.
+
+
+! Package pdftex.def Error: File `../FnP/gnuplot/setup-1-eps-converted-to.pdf' 
+not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 ....5\unitlength]{../FnP/gnuplot/setup-1.eps}}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+)
+
+Package natbib Warning: Citation `Parkinson1964' on page 5 undefined on input l
 ine 80.
 
 
-Package natbib Warning: Citation `Barrero-Gil2009' on page 4 undefined on input
+Package natbib Warning: Citation `Barrero-Gil2009' on page 5 undefined on input
  line 80.
 
 
-Package natbib Warning: Citation `Ng2005' on page 4 undefined on input line 80.
+Package natbib Warning: Citation `Ng2005' on page 5 undefined on input line 80.
 
 
 
-Package natbib Warning: Citation `Joly2012' on page 4 undefined on input line 9
+Package natbib Warning: Citation `Joly2012' on page 5 undefined on input line 9
 1.
 
-[4] (../figure/cy_vs_theta.tex
-File: ../FnP/gnuplot/lift_curve_200.eps Graphic file (type eps)
- <../FnP/gnuplot/lift_curve_200.eps>
-File: ../FnP/gnuplot/lift_curve_park.eps Graphic file (type eps)
+[5]
+! Extra }, or forgotten $.
+l.97 ...)^5{+}a_7\left(\frac{\dot{y}}{U}\right)^7}
+                                                  .
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
-<../FnP/gnuplot/lift_curve_park.eps>
+(../figure/cy_vs_theta.tex
+Package epstopdf Info: Source file: <../FnP/gnuplot/lift_curve_200.eps>
+(epstopdf)                    date: 2014-06-07 13:44:11
+(epstopdf)                    size: 20311 bytes
+(epstopdf)             Output file: <../FnP/gnuplot/lift_curve_200-eps-converte
+d-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=../FnP/gnuplot/lift_curve_
+200-eps-converted-to.pdf ../FnP/gnuplot/lift_curve_200.eps>
+(epstopdf)             \includegraphics on input line 7.
+runsystem(repstopdf --outfile=../FnP/gnuplot/lift_curve_200-eps-converted-to.pd
+f ../FnP/gnuplot/lift_curve_200.eps)...executed safely (allowed).
 
-Package natbib Warning: Citation `Parkinson1964' on page 5 undefined on input l
+Package epstopdf Info: Result file: <../FnP/gnuplot/lift_curve_200-eps-converte
+d-to.pdf>.
+
+
+! Package pdftex.def Error: File `../FnP/gnuplot/lift_curve_200-eps-converted-t
+o.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ...length]{../FnP/gnuplot/lift_curve_200.eps}}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <../FnP/gnuplot/lift_curve_park.eps>
+(epstopdf)                    date: 2014-05-12 16:36:20
+(epstopdf)                    size: 28855 bytes
+(epstopdf)             Output file: <../FnP/gnuplot/lift_curve_park-eps-convert
+ed-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=../FnP/gnuplot/lift_curve_
+park-eps-converted-to.pdf ../FnP/gnuplot/lift_curve_park.eps>
+(epstopdf)             \includegraphics on input line 8.
+runsystem(repstopdf --outfile=../FnP/gnuplot/lift_curve_park-eps-converted-to.p
+df ../FnP/gnuplot/lift_curve_park.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <../FnP/gnuplot/lift_curve_park-eps-convert
+ed-to.pdf>.
+
+! Package pdftex.def Error: File `../FnP/gnuplot/lift_curve_park-eps-converted-
+to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...ength]{../FnP/gnuplot/lift_curve_park.eps}}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package natbib Warning: Citation `Parkinson1964' on page 6 undefined on input l
 ine 19.
 
 
-Package natbib Warning: Citation `Parkinson1964' on page 5 undefined on input l
+Package natbib Warning: Citation `Parkinson1964' on page 6 undefined on input l
 ine 19.
 
-) (../figure/coefficient-table.tex) [5] [6]
+) (../figure/coefficient-table.tex) [6] [7] [8]
 
-Package natbib Warning: Citation `Parkinson1964' on page 7 undefined on input l
-ine 179.
+Package natbib Warning: Citation `Parkinson1964' on page 9 undefined on input l
+ine 181.
 
-[7] (../figure/uncollapsed_data.tex
-File: ../FnP/gnuplot/displacement_amp_re_parkinson_1.eps Graphic file (type eps
-)
+(../figure/uncollapsed_data.tex
+Package epstopdf Info: Source file: <../FnP/gnuplot/displacement_amp_re_parkins
+on_1.eps>
+(epstopdf)                    date: 2014-05-12 16:36:15
+(epstopdf)                    size: 19619 bytes
+(epstopdf)             Output file: <../FnP/gnuplot/displacement_amp_re_parkins
+on_1-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=../FnP/gnuplot/displacemen
+t_amp_re_parkinson_1-eps-converted-to.pdf ../FnP/gnuplot/displacement_amp_re_pa
+rkinson_1.eps>
+(epstopdf)             \includegraphics on input line 8.
+runsystem(repstopdf --outfile=../FnP/gnuplot/displacement_amp_re_parkinson_1-ep
+s-converted-to.pdf ../FnP/gnuplot/displacement_amp_re_parkinson_1.eps)...execut
+ed safely (allowed).
 
-<../FnP/gnuplot/displacement_amp_re_parkinson_1.eps>
-File: ../FnP/gnuplot/velocity_amp_re_parkinson.eps Graphic file (type eps)
+Package epstopdf Info: Result file: <../FnP/gnuplot/displacement_amp_re_parkins
+on_1-eps-converted-to.pdf>.
 
-<../FnP/gnuplot/velocity_amp_re_parkinson.eps>
-File: ../FnP/gnuplot/mean_power_re_parkinson.eps Graphic file (type eps)
 
-<../FnP/gnuplot/mean_power_re_parkinson.eps>
-File: ../FnP/gnuplot/displacement_amp_re165.eps Graphic file (type eps)
+! Package pdftex.def Error: File `../FnP/gnuplot/displacement_amp_re_parkinson_
+1-eps-converted-to.pdf' not found.
 
-<../FnP/gnuplot/displacement_amp_re165.eps>
-File: ../FnP/gnuplot/velocity_amp_re165.eps Graphic file (type eps)
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...uplot/displacement_amp_re_parkinson_1.eps}}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-<../FnP/gnuplot/velocity_amp_re165.eps>
-File: ../FnP/gnuplot/mean_power_re_165.eps Graphic file (type eps)
- <../FnP/gnuplot/mean_power_re_165.eps>
+Package epstopdf Info: Source file: <../FnP/gnuplot/velocity_amp_re_parkinson.e
+ps>
+(epstopdf)                    date: 2014-05-12 16:36:42
+(epstopdf)                    size: 19728 bytes
+(epstopdf)             Output file: <../FnP/gnuplot/velocity_amp_re_parkinson-e
+ps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=../FnP/gnuplot/velocity_am
+p_re_parkinson-eps-converted-to.pdf ../FnP/gnuplot/velocity_amp_re_parkinson.ep
+s>
+(epstopdf)             \includegraphics on input line 9.
+runsystem(repstopdf --outfile=../FnP/gnuplot/velocity_amp_re_parkinson-eps-conv
+erted-to.pdf ../FnP/gnuplot/velocity_amp_re_parkinson.eps)...executed safely (a
+llowed).
 
-Package natbib Warning: Citation `Parkinson1964' on page 8 undefined on input l
+Package epstopdf Info: Result file: <../FnP/gnuplot/velocity_amp_re_parkinson-e
+ps-converted-to.pdf>.
+
+! Package pdftex.def Error: File `../FnP/gnuplot/velocity_amp_re_parkinson-eps-
+converted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 ...FnP/gnuplot/velocity_amp_re_parkinson.eps}}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <../FnP/gnuplot/mean_power_re_parkinson.eps
+>
+(epstopdf)                    date: 2014-05-12 16:36:26
+(epstopdf)                    size: 21829 bytes
+(epstopdf)             Output file: <../FnP/gnuplot/mean_power_re_parkinson-eps
+-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=../FnP/gnuplot/mean_power_
+re_parkinson-eps-converted-to.pdf ../FnP/gnuplot/mean_power_re_parkinson.eps>
+(epstopdf)             \includegraphics on input line 10.
+runsystem(repstopdf --outfile=../FnP/gnuplot/mean_power_re_parkinson-eps-conver
+ted-to.pdf ../FnP/gnuplot/mean_power_re_parkinson.eps)...executed safely (allow
+ed).
+
+Package epstopdf Info: Result file: <../FnP/gnuplot/mean_power_re_parkinson-eps
+-converted-to.pdf>.
+
+! Package pdftex.def Error: File `../FnP/gnuplot/mean_power_re_parkinson-eps-co
+nverted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 .../FnP/gnuplot/mean_power_re_parkinson.eps}}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <../FnP/gnuplot/displacement_amp_re165.eps>
+
+(epstopdf)                    date: 2014-05-12 16:36:14
+(epstopdf)                    size: 19379 bytes
+(epstopdf)             Output file: <../FnP/gnuplot/displacement_amp_re165-eps-
+converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=../FnP/gnuplot/displacemen
+t_amp_re165-eps-converted-to.pdf ../FnP/gnuplot/displacement_amp_re165.eps>
+(epstopdf)             \includegraphics on input line 13.
+runsystem(repstopdf --outfile=../FnP/gnuplot/displacement_amp_re165-eps-convert
+ed-to.pdf ../FnP/gnuplot/displacement_amp_re165.eps)...executed safely (allowed
+).
+
+Package epstopdf Info: Result file: <../FnP/gnuplot/displacement_amp_re165-eps-
+converted-to.pdf>.
+
+! Package pdftex.def Error: File `../FnP/gnuplot/displacement_amp_re165-eps-con
+verted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 ..../FnP/gnuplot/displacement_amp_re165.eps}}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <../FnP/gnuplot/velocity_amp_re165.eps>
+(epstopdf)                    date: 2014-05-12 16:36:42
+(epstopdf)                    size: 19515 bytes
+(epstopdf)             Output file: <../FnP/gnuplot/velocity_amp_re165-eps-conv
+erted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=../FnP/gnuplot/velocity_am
+p_re165-eps-converted-to.pdf ../FnP/gnuplot/velocity_amp_re165.eps>
+(epstopdf)             \includegraphics on input line 14.
+runsystem(repstopdf --outfile=../FnP/gnuplot/velocity_amp_re165-eps-converted-t
+o.pdf ../FnP/gnuplot/velocity_amp_re165.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <../FnP/gnuplot/velocity_amp_re165-eps-conv
+erted-to.pdf>.
+
+! Package pdftex.def Error: File `../FnP/gnuplot/velocity_amp_re165-eps-convert
+ed-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 ...h]{../FnP/gnuplot/velocity_amp_re165.eps}}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <../FnP/gnuplot/mean_power_re_165.eps>
+(epstopdf)                    date: 2014-05-12 16:36:25
+(epstopdf)                    size: 20345 bytes
+(epstopdf)             Output file: <../FnP/gnuplot/mean_power_re_165-eps-conve
+rted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=../FnP/gnuplot/mean_power_
+re_165-eps-converted-to.pdf ../FnP/gnuplot/mean_power_re_165.eps>
+(epstopdf)             \includegraphics on input line 15.
+runsystem(repstopdf --outfile=../FnP/gnuplot/mean_power_re_165-eps-converted-to
+.pdf ../FnP/gnuplot/mean_power_re_165.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <../FnP/gnuplot/mean_power_re_165-eps-conve
+rted-to.pdf>.
+
+! Package pdftex.def Error: File `../FnP/gnuplot/mean_power_re_165-eps-converte
+d-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...th]{../FnP/gnuplot/mean_power_re_165.eps}}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package natbib Warning: Citation `Parkinson1964' on page 9 undefined on input l
 ine 40.
 
 
-Package natbib Warning: Citation `Parkinson1964' on page 8 undefined on input l
+Package natbib Warning: Citation `Parkinson1964' on page 9 undefined on input l
 ine 40.
 
 ) (../figure/collapsed_data.tex
-File: ../FnP/gnuplot/displacement_amp_collapsed_parkinson.eps Graphic file (typ
-e eps)
+Package epstopdf Info: Source file: <../FnP/gnuplot/displacement_amp_collapsed_
+parkinson.eps>
+(epstopdf)                    date: 2014-05-12 16:36:12
+(epstopdf)                    size: 19710 bytes
+(epstopdf)             Output file: <../FnP/gnuplot/displacement_amp_collapsed_
+parkinson-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=../FnP/gnuplot/displacemen
+t_amp_collapsed_parkinson-eps-converted-to.pdf ../FnP/gnuplot/displacement_amp_
+collapsed_parkinson.eps>
+(epstopdf)             \includegraphics on input line 7.
+runsystem(repstopdf --outfile=../FnP/gnuplot/displacement_amp_collapsed_parkins
+on-eps-converted-to.pdf ../FnP/gnuplot/displacement_amp_collapsed_parkinson.eps
+)...executed safely (allowed).
 
-<../FnP/gnuplot/displacement_amp_collapsed_parkinson.eps>
-File: ../FnP/gnuplot/velocity_amp_collapsed_parkinson.eps Graphic file (type ep
-s)
-
-<../FnP/gnuplot/velocity_amp_collapsed_parkinson.eps>
-File: ../FnP/gnuplot/velocity_amp_collapsed_re165.eps Graphic file (type eps)
-
-<../FnP/gnuplot/velocity_amp_collapsed_re165.eps>
-File: ../FnP/gnuplot/mean_power_collapsed_parkinson.eps Graphic file (type eps)
+Package epstopdf Info: Result file: <../FnP/gnuplot/displacement_amp_collapsed_
+parkinson-eps-converted-to.pdf>.
 
 
-<../FnP/gnuplot/mean_power_collapsed_parkinson.eps>
-File: ../FnP/gnuplot/mean_power_collapsed_re_165.eps Graphic file (type eps)
+! Package pdftex.def Error: File `../FnP/gnuplot/displacement_amp_collapsed_par
+kinson-eps-converted-to.pdf' not found.
 
-<../FnP/gnuplot/mean_power_collapsed_re_165.eps>
-File: ../FnP/gnuplot/displacement_amp_collpased_re165.eps Graphic file (type ep
-s)
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 .../displacement_amp_collapsed_parkinson.eps}}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-<../FnP/gnuplot/displacement_amp_collpased_re165.eps>
+Package epstopdf Info: Source file: <../FnP/gnuplot/velocity_amp_collapsed_park
+inson.eps>
+(epstopdf)                    date: 2014-05-12 16:36:40
+(epstopdf)                    size: 19706 bytes
+(epstopdf)             Output file: <../FnP/gnuplot/velocity_amp_collapsed_park
+inson-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=../FnP/gnuplot/velocity_am
+p_collapsed_parkinson-eps-converted-to.pdf ../FnP/gnuplot/velocity_amp_collapse
+d_parkinson.eps>
+(epstopdf)             \includegraphics on input line 8.
+runsystem(repstopdf --outfile=../FnP/gnuplot/velocity_amp_collapsed_parkinson-e
+ps-converted-to.pdf ../FnP/gnuplot/velocity_amp_collapsed_parkinson.eps)...exec
+uted safely (allowed).
 
-Package natbib Warning: Citation `Parkinson1964' on page 8 undefined on input l
+Package epstopdf Info: Result file: <../FnP/gnuplot/velocity_amp_collapsed_park
+inson-eps-converted-to.pdf>.
+
+! Package pdftex.def Error: File `../FnP/gnuplot/velocity_amp_collapsed_parkins
+on-eps-converted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...plot/velocity_amp_collapsed_parkinson.eps}}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <../FnP/gnuplot/velocity_amp_collapsed_re16
+5.eps>
+(epstopdf)                    date: 2014-05-12 16:36:41
+(epstopdf)                    size: 19421 bytes
+(epstopdf)             Output file: <../FnP/gnuplot/velocity_amp_collapsed_re16
+5-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=../FnP/gnuplot/velocity_am
+p_collapsed_re165-eps-converted-to.pdf ../FnP/gnuplot/velocity_amp_collapsed_re
+165.eps>
+(epstopdf)             \includegraphics on input line 9.
+runsystem(repstopdf --outfile=../FnP/gnuplot/velocity_amp_collapsed_re165-eps-c
+onverted-to.pdf ../FnP/gnuplot/velocity_amp_collapsed_re165.eps)...executed saf
+ely (allowed).
+
+Package epstopdf Info: Result file: <../FnP/gnuplot/velocity_amp_collapsed_re16
+5-eps-converted-to.pdf>.
+
+! Package pdftex.def Error: File `../FnP/gnuplot/velocity_amp_collapsed_re165-e
+ps-converted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 .../gnuplot/velocity_amp_collapsed_re165.eps}}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <../FnP/gnuplot/mean_power_collapsed_parkin
+son.eps>
+(epstopdf)                    date: 2014-05-12 16:36:23
+(epstopdf)                    size: 21939 bytes
+(epstopdf)             Output file: <../FnP/gnuplot/mean_power_collapsed_parkin
+son-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=../FnP/gnuplot/mean_power_
+collapsed_parkinson-eps-converted-to.pdf ../FnP/gnuplot/mean_power_collapsed_pa
+rkinson.eps>
+(epstopdf)             \includegraphics on input line 11.
+runsystem(repstopdf --outfile=../FnP/gnuplot/mean_power_collapsed_parkinson-eps
+-converted-to.pdf ../FnP/gnuplot/mean_power_collapsed_parkinson.eps)...executed
+ safely (allowed).
+
+Package epstopdf Info: Result file: <../FnP/gnuplot/mean_power_collapsed_parkin
+son-eps-converted-to.pdf>.
+
+! Package pdftex.def Error: File `../FnP/gnuplot/mean_power_collapsed_parkinson
+-eps-converted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 ...uplot/mean_power_collapsed_parkinson.eps}}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <../FnP/gnuplot/mean_power_collapsed_re_165
+.eps>
+(epstopdf)                    date: 2014-05-12 16:36:25
+(epstopdf)                    size: 20112 bytes
+(epstopdf)             Output file: <../FnP/gnuplot/mean_power_collapsed_re_165
+-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=../FnP/gnuplot/mean_power_
+collapsed_re_165-eps-converted-to.pdf ../FnP/gnuplot/mean_power_collapsed_re_16
+5.eps>
+(epstopdf)             \includegraphics on input line 12.
+runsystem(repstopdf --outfile=../FnP/gnuplot/mean_power_collapsed_re_165-eps-co
+nverted-to.pdf ../FnP/gnuplot/mean_power_collapsed_re_165.eps)...executed safel
+y (allowed).
+
+Package epstopdf Info: Result file: <../FnP/gnuplot/mean_power_collapsed_re_165
+-eps-converted-to.pdf>.
+
+! Package pdftex.def Error: File `../FnP/gnuplot/mean_power_collapsed_re_165-ep
+s-converted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 .../gnuplot/mean_power_collapsed_re_165.eps}}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <../FnP/gnuplot/displacement_amp_collpased_
+re165.eps>
+(epstopdf)                    date: 2014-05-12 16:36:13
+(epstopdf)                    size: 19178 bytes
+(epstopdf)             Output file: <../FnP/gnuplot/displacement_amp_collpased_
+re165-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=../FnP/gnuplot/displacemen
+t_amp_collpased_re165-eps-converted-to.pdf ../FnP/gnuplot/displacement_amp_coll
+pased_re165.eps>
+(epstopdf)             \includegraphics on input line 13.
+runsystem(repstopdf --outfile=../FnP/gnuplot/displacement_amp_collpased_re165-e
+ps-converted-to.pdf ../FnP/gnuplot/displacement_amp_collpased_re165.eps)...exec
+uted safely (allowed).
+
+Package epstopdf Info: Result file: <../FnP/gnuplot/displacement_amp_collpased_
+re165-eps-converted-to.pdf>.
+
+! Package pdftex.def Error: File `../FnP/gnuplot/displacement_amp_collpased_re1
+65-eps-converted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 ...lot/displacement_amp_collpased_re165.eps}}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package natbib Warning: Citation `Parkinson1964' on page 9 undefined on input l
 ine 35.
 
 
-Package natbib Warning: Citation `Parkinson1964' on page 8 undefined on input l
+Package natbib Warning: Citation `Parkinson1964' on page 9 undefined on input l
 ine 35.
 
 )
 
-Package natbib Warning: Citation `Barrero-Gil2010a' on page 8 undefined on inpu
-t line 192.
+Package natbib Warning: Citation `Barrero-Gil2010a' on page 9 undefined on inpu
+t line 194.
 
-[8] [9]
+[9] [10] [11]
 
-Package natbib Warning: Citation `Joly2012' on page 10 undefined on input line 
-197.
+Package natbib Warning: Citation `Joly2012' on page 12 undefined on input line 
+199.
 
 (../figure/spectrum_pi_1_10.tex
-File: ../FnP/gnuplot/spectrum_pi1_10_pi2_0.eps Graphic file (type eps)
- <../FnP/gnuplot/spectrum_pi1_10_pi2_0.eps>
-File: ../FnP/gnuplot/spectrum_pi1_10_pi2_0_3.eps Graphic file (type eps)
+Package epstopdf Info: Source file: <../FnP/gnuplot/spectrum_pi1_10_pi2_0.eps>
+(epstopdf)                    date: 2014-06-09 18:26:22
+(epstopdf)                    size: 21566 bytes
+(epstopdf)             Output file: <../FnP/gnuplot/spectrum_pi1_10_pi2_0-eps-c
+onverted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=../FnP/gnuplot/spectrum_pi
+1_10_pi2_0-eps-converted-to.pdf ../FnP/gnuplot/spectrum_pi1_10_pi2_0.eps>
+(epstopdf)             \includegraphics on input line 23.
+runsystem(repstopdf --outfile=../FnP/gnuplot/spectrum_pi1_10_pi2_0-eps-converte
+d-to.pdf ../FnP/gnuplot/spectrum_pi1_10_pi2_0.eps)...executed safely (allowed).
 
-<../FnP/gnuplot/spectrum_pi1_10_pi2_0_3.eps>
-File: ../FnP/gnuplot/spectrum_pi1_10_pi2_0_54.eps Graphic file (type eps)
+Package epstopdf Info: Result file: <../FnP/gnuplot/spectrum_pi1_10_pi2_0-eps-c
+onverted-to.pdf>.
 
-<../FnP/gnuplot/spectrum_pi1_10_pi2_0_54.eps>
-File: ../FnP/gnuplot/spectrum_pi1_10_pi2_0_7.eps Graphic file (type eps)
 
-<../FnP/gnuplot/spectrum_pi1_10_pi2_0_7.eps>
+! Package pdftex.def Error: File `../FnP/gnuplot/spectrum_pi1_10_pi2_0-eps-conv
+erted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 }
+      
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <../FnP/gnuplot/spectrum_pi1_10_pi2_0_3.eps
+>
+(epstopdf)                    date: 2014-06-09 18:26:21
+(epstopdf)                    size: 24770 bytes
+(epstopdf)             Output file: <../FnP/gnuplot/spectrum_pi1_10_pi2_0_3-eps
+-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=../FnP/gnuplot/spectrum_pi
+1_10_pi2_0_3-eps-converted-to.pdf ../FnP/gnuplot/spectrum_pi1_10_pi2_0_3.eps>
+(epstopdf)             \includegraphics on input line 23.
+runsystem(repstopdf --outfile=../FnP/gnuplot/spectrum_pi1_10_pi2_0_3-eps-conver
+ted-to.pdf ../FnP/gnuplot/spectrum_pi1_10_pi2_0_3.eps)...executed safely (allow
+ed).
+
+Package epstopdf Info: Result file: <../FnP/gnuplot/spectrum_pi1_10_pi2_0_3-eps
+-converted-to.pdf>.
+
+! Package pdftex.def Error: File `../FnP/gnuplot/spectrum_pi1_10_pi2_0_3-eps-co
+nverted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 }
+      
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <../FnP/gnuplot/spectrum_pi1_10_pi2_0_54.ep
+s>
+(epstopdf)                    date: 2014-06-09 18:26:21
+(epstopdf)                    size: 23293 bytes
+(epstopdf)             Output file: <../FnP/gnuplot/spectrum_pi1_10_pi2_0_54-ep
+s-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=../FnP/gnuplot/spectrum_pi
+1_10_pi2_0_54-eps-converted-to.pdf ../FnP/gnuplot/spectrum_pi1_10_pi2_0_54.eps>
+
+(epstopdf)             \includegraphics on input line 23.
+runsystem(repstopdf --outfile=../FnP/gnuplot/spectrum_pi1_10_pi2_0_54-eps-conve
+rted-to.pdf ../FnP/gnuplot/spectrum_pi1_10_pi2_0_54.eps)...executed safely (all
+owed).
+
+Package epstopdf Info: Result file: <../FnP/gnuplot/spectrum_pi1_10_pi2_0_54-ep
+s-converted-to.pdf>.
+
+! Package pdftex.def Error: File `../FnP/gnuplot/spectrum_pi1_10_pi2_0_54-eps-c
+onverted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 }
+      
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <../FnP/gnuplot/spectrum_pi1_10_pi2_0_7.eps
+>
+(epstopdf)                    date: 2014-06-09 18:26:22
+(epstopdf)                    size: 26013 bytes
+(epstopdf)             Output file: <../FnP/gnuplot/spectrum_pi1_10_pi2_0_7-eps
+-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=../FnP/gnuplot/spectrum_pi
+1_10_pi2_0_7-eps-converted-to.pdf ../FnP/gnuplot/spectrum_pi1_10_pi2_0_7.eps>
+(epstopdf)             \includegraphics on input line 23.
+runsystem(repstopdf --outfile=../FnP/gnuplot/spectrum_pi1_10_pi2_0_7-eps-conver
+ted-to.pdf ../FnP/gnuplot/spectrum_pi1_10_pi2_0_7.eps)...executed safely (allow
+ed).
+
+Package epstopdf Info: Result file: <../FnP/gnuplot/spectrum_pi1_10_pi2_0_7-eps
+-converted-to.pdf>.
+
+! Package pdftex.def Error: File `../FnP/gnuplot/spectrum_pi1_10_pi2_0_7-eps-co
+nverted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 }
+      
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
 Overfull \hbox (14.63324pt too wide) in paragraph at lines 23--24
-[][][] 
+[][] 
  []
 
-)) [10] (./elsarticle-template-harv.bbl)
+) (../figure/power_data.tex
+Package epstopdf Info: Source file: <../FnP/gnuplot/mean_power_re_parkinson.eps
+>
+(epstopdf)                    date: 2014-05-12 16:36:26
+(epstopdf)                    size: 21829 bytes
+(epstopdf)             Output file: <../FnP/gnuplot/mean_power_re_parkinson-eps
+-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=../FnP/gnuplot/mean_power_
+re_parkinson-eps-converted-to.pdf ../FnP/gnuplot/mean_power_re_parkinson.eps>
+(epstopdf)             \includegraphics on input line 23.
+runsystem(repstopdf --outfile=../FnP/gnuplot/mean_power_re_parkinson-eps-conver
+ted-to.pdf ../FnP/gnuplot/mean_power_re_parkinson.eps)...executed safely (allow
+ed).
+
+Package epstopdf Info: Result file: <../FnP/gnuplot/mean_power_re_parkinson-eps
+-converted-to.pdf>.
+
+
+! Package pdftex.def Error: File `../FnP/gnuplot/mean_power_re_parkinson-eps-co
+nverted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 }
+      
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <../FnP/gnuplot/mean_power_re_165.eps>
+(epstopdf)                    date: 2014-05-12 16:36:25
+(epstopdf)                    size: 20345 bytes
+(epstopdf)             Output file: <../FnP/gnuplot/mean_power_re_165-eps-conve
+rted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=../FnP/gnuplot/mean_power_
+re_165-eps-converted-to.pdf ../FnP/gnuplot/mean_power_re_165.eps>
+(epstopdf)             \includegraphics on input line 23.
+runsystem(repstopdf --outfile=../FnP/gnuplot/mean_power_re_165-eps-converted-to
+.pdf ../FnP/gnuplot/mean_power_re_165.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <../FnP/gnuplot/mean_power_re_165-eps-conve
+rted-to.pdf>.
+
+! Package pdftex.def Error: File `../FnP/gnuplot/mean_power_re_165-eps-converte
+d-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 }
+      
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <../FnP/gnuplot/mean_power_collapsed_parkin
+son.eps>
+(epstopdf)                    date: 2014-05-12 16:36:23
+(epstopdf)                    size: 21939 bytes
+(epstopdf)             Output file: <../FnP/gnuplot/mean_power_collapsed_parkin
+son-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=../FnP/gnuplot/mean_power_
+collapsed_parkinson-eps-converted-to.pdf ../FnP/gnuplot/mean_power_collapsed_pa
+rkinson.eps>
+(epstopdf)             \includegraphics on input line 23.
+runsystem(repstopdf --outfile=../FnP/gnuplot/mean_power_collapsed_parkinson-eps
+-converted-to.pdf ../FnP/gnuplot/mean_power_collapsed_parkinson.eps)...executed
+ safely (allowed).
+
+Package epstopdf Info: Result file: <../FnP/gnuplot/mean_power_collapsed_parkin
+son-eps-converted-to.pdf>.
+
+! Package pdftex.def Error: File `../FnP/gnuplot/mean_power_collapsed_parkinson
+-eps-converted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 }
+      
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package epstopdf Info: Source file: <../FnP/gnuplot/mean_power_collapsed_re_165
+.eps>
+(epstopdf)                    date: 2014-05-12 16:36:25
+(epstopdf)                    size: 20112 bytes
+(epstopdf)             Output file: <../FnP/gnuplot/mean_power_collapsed_re_165
+-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=../FnP/gnuplot/mean_power_
+collapsed_re_165-eps-converted-to.pdf ../FnP/gnuplot/mean_power_collapsed_re_16
+5.eps>
+(epstopdf)             \includegraphics on input line 23.
+runsystem(repstopdf --outfile=../FnP/gnuplot/mean_power_collapsed_re_165-eps-co
+nverted-to.pdf ../FnP/gnuplot/mean_power_collapsed_re_165.eps)...executed safel
+y (allowed).
+
+Package epstopdf Info: Result file: <../FnP/gnuplot/mean_power_collapsed_re_165
+-eps-converted-to.pdf>.
+
+! Package pdftex.def Error: File `../FnP/gnuplot/mean_power_collapsed_re_165-ep
+s-converted-to.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 }
+      
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (14.63324pt too wide) in paragraph at lines 23--24
+[][] 
+ []
+
+)) [12] [13] [14] (./elsarticle-template-harv.bbl)
 
 Package natbib Warning: There were undefined citations.
 
 (./elsarticle-template-harv.aux) ) 
 Here is how much of TeX's memory you used:
- 2795 strings out of 495035
- 37082 string characters out of 6181703
- 95482 words of memory out of 5000000
- 5902 multiletter control sequences out of 15000+600000
- 15734 words of font info for 60 fonts, out of 8000000 for 9000
+ 3125 strings out of 495028
+ 40468 string characters out of 6181497
+ 104875 words of memory out of 5000000
+ 6229 multiletter control sequences out of 15000+600000
+ 15903 words of font info for 61 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 42i,10n,34p,1342b,303s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,10n,34p,1342b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on elsarticle-template-harv.pdf (14 pages, 231144 bytes).
+PDF statistics:
+ 126 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-Output written on elsarticle-template-harv.dvi (10 pages, 37432 bytes).
