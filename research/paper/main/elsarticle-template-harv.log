@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=latex 2014.2.11)  9 JUN 2014 22:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2014.6.18)  3 JUL 2014 12:28
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -215,12 +215,6 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/a4wide/a4wide.sty
-Package: a4wide 1994/08/30
-
-(/usr/share/texlive/texmf-dist/tex/latex/ntgclass/a4.sty
-Package: a4 2004/04/15 v1.2g A4 based page layout
-))
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
@@ -256,11 +250,10 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 138.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./article.tex
-[1
+) [1
 
 
-]
+] (./article.tex
 
 Package natbib Warning: Citation `Paidoussis2010' on page 2 undefined on input 
 line 5.
@@ -289,58 +282,69 @@ ine 7.
 Package natbib Warning: Citation `Barrero-Gil2010a' on page 2 undefined on inpu
 t line 7.
 
+[2]
 
-Package natbib Warning: Citation `Joly2012' on page 2 undefined on input line 1
+Package natbib Warning: Citation `Joly2012' on page 3 undefined on input line 1
 0.
 
 
-Package natbib Warning: Citation `Parkinson1964' on page 2 undefined on input l
+Package natbib Warning: Citation `Parkinson1964' on page 3 undefined on input l
 ine 10.
 
 
-Overfull \hbox (153.7917pt too wide) in paragraph at lines 17--57
+Overfull \hbox (224.51294pt too wide) in paragraph at lines 17--57
 [][][] 
  []
 
-[2] [3] (../figure/sketch-1.tex
+[3]
+Overfull \vbox (18.26488pt too high) has occurred while \output is active []
+
+
+[4] (../figure/sketch-1.tex
 File: ../FnP/gnuplot/setup-1.eps Graphic file (type eps)
  <../FnP/gnuplot/setup-1.eps>)
 
-Package natbib Warning: Citation `Parkinson1964' on page 4 undefined on input l
+Package natbib Warning: Citation `Parkinson1964' on page 5 undefined on input l
 ine 80.
 
 
-Package natbib Warning: Citation `Barrero-Gil2009' on page 4 undefined on input
+Package natbib Warning: Citation `Barrero-Gil2009' on page 5 undefined on input
  line 80.
 
 
-Package natbib Warning: Citation `Ng2005' on page 4 undefined on input line 80.
+Package natbib Warning: Citation `Ng2005' on page 5 undefined on input line 80.
 
 
 
-Package natbib Warning: Citation `Joly2012' on page 4 undefined on input line 9
+Package natbib Warning: Citation `Joly2012' on page 5 undefined on input line 9
 1.
 
-[4] (../figure/cy_vs_theta.tex
+[5]
+Overfull \hbox (21.498pt too wide) detected at line 96
+\OML/cmm/m/it/12 m[][]c[][]ky[][]^^ZU[]\OMS/cmsy/m/n/12 A[]\OML/cmm/m/it/12 a[]
+ [] []a[] [][] []a[] [][] []a[] [][] [][]F[] [] []:
+ []
+
+(../figure/cy_vs_theta.tex
 File: ../FnP/gnuplot/lift_curve_200.eps Graphic file (type eps)
  <../FnP/gnuplot/lift_curve_200.eps>
 File: ../FnP/gnuplot/lift_curve_park.eps Graphic file (type eps)
 
 <../FnP/gnuplot/lift_curve_park.eps>
 
-Package natbib Warning: Citation `Parkinson1964' on page 5 undefined on input l
+Package natbib Warning: Citation `Parkinson1964' on page 6 undefined on input l
 ine 19.
 
 
-Package natbib Warning: Citation `Parkinson1964' on page 5 undefined on input l
+Package natbib Warning: Citation `Parkinson1964' on page 6 undefined on input l
 ine 19.
 
-) (../figure/coefficient-table.tex) [5] [6]
+[6]) (../figure/coefficient-table.tex) [7] [8]
 
-Package natbib Warning: Citation `Parkinson1964' on page 7 undefined on input l
+Package natbib Warning: Citation `Parkinson1964' on page 9 undefined on input l
 ine 179.
 
-[7] (../figure/uncollapsed_data.tex
+[9] (../figure/uncollapsed_data.tex
 File: ../FnP/gnuplot/displacement_amp_re_parkinson_1.eps Graphic file (type eps
 )
 
@@ -360,12 +364,12 @@ File: ../FnP/gnuplot/velocity_amp_re165.eps Graphic file (type eps)
 File: ../FnP/gnuplot/mean_power_re_165.eps Graphic file (type eps)
  <../FnP/gnuplot/mean_power_re_165.eps>
 
-Package natbib Warning: Citation `Parkinson1964' on page 8 undefined on input l
-ine 40.
+Package natbib Warning: Citation `Parkinson1964' on page 10 undefined on input 
+line 40.
 
 
-Package natbib Warning: Citation `Parkinson1964' on page 8 undefined on input l
-ine 40.
+Package natbib Warning: Citation `Parkinson1964' on page 10 undefined on input 
+line 40.
 
 ) (../figure/collapsed_data.tex
 File: ../FnP/gnuplot/displacement_amp_collapsed_parkinson.eps Graphic file (typ
@@ -391,26 +395,22 @@ s)
 
 <../FnP/gnuplot/displacement_amp_collpased_re165.eps>
 
-Package natbib Warning: Citation `Parkinson1964' on page 8 undefined on input l
-ine 35.
+Package natbib Warning: Citation `Parkinson1964' on page 10 undefined on input 
+line 35.
 
 
-Package natbib Warning: Citation `Parkinson1964' on page 8 undefined on input l
-ine 35.
+Package natbib Warning: Citation `Parkinson1964' on page 10 undefined on input 
+line 35.
 
 )
 
-Package natbib Warning: Citation `Barrero-Gil2010a' on page 8 undefined on inpu
-t line 192.
+Package natbib Warning: Citation `Barrero-Gil2010a' on page 10 undefined on inp
+ut line 193.
 
-[8] [9]
-
-Package natbib Warning: Citation `Joly2012' on page 10 undefined on input line 
-197.
-
-(../figure/spectrum_pi_1_10.tex
+[10] [11] (../figure/spectrum_pi_1_10.tex
 File: ../FnP/gnuplot/spectrum_pi1_10_pi2_0.eps Graphic file (type eps)
- <../FnP/gnuplot/spectrum_pi1_10_pi2_0.eps>
+
+<../FnP/gnuplot/spectrum_pi1_10_pi2_0.eps>
 File: ../FnP/gnuplot/spectrum_pi1_10_pi2_0_3.eps Graphic file (type eps)
 
 <../FnP/gnuplot/spectrum_pi1_10_pi2_0_3.eps>
@@ -424,18 +424,18 @@ Overfull \hbox (14.63324pt too wide) in paragraph at lines 23--24
 [][][] 
  []
 
-)) [10] (./elsarticle-template-harv.bbl)
+)) [12] [13] (./elsarticle-template-harv.bbl)
 
 Package natbib Warning: There were undefined citations.
 
 (./elsarticle-template-harv.aux) ) 
 Here is how much of TeX's memory you used:
- 2795 strings out of 495035
- 37082 string characters out of 6181703
- 95482 words of memory out of 5000000
- 5902 multiletter control sequences out of 15000+600000
+ 2775 strings out of 495029
+ 36595 string characters out of 6181523
+ 93282 words of memory out of 5000000
+ 5890 multiletter control sequences out of 15000+600000
  15734 words of font info for 60 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  42i,10n,34p,1342b,303s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on elsarticle-template-harv.dvi (10 pages, 37432 bytes).
+Output written on elsarticle-template-harv.dvi (13 pages, 39008 bytes).
